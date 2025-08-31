@@ -238,7 +238,7 @@ def crossing_tokens(token_spans: Sequence[Span], gold: frozenset[int] | set[int]
                 hi = mid
         if lo < len(g) and g[lo] < e:
             count += 1
-    return count
+#     return count
 
 
 def words_intact(gold_spans: Sequence[Span], token_spans: Sequence[Span]) -> int:
