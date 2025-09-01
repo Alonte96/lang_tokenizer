@@ -21,6 +21,7 @@ Deliberately included hazards, each with a test that depends on it:
   * Thai phrase spaces         -- free boundaries; the `core` mask must remove them
   * Full-width CJK punctuation -- trivial positions
   * Latin/digit runs in CJK    -- script-transition positions
+# improved
   * Single-word sentences      -- no gold boundary; exercises the 0/0 conventions
 """
 
