@@ -702,3 +702,5 @@ def test_lift_ci_of_a_null_against_itself_is_zero():
     result = lift_ci(mat, mat, B=200, seed=0)
     assert result.diff == 0.0
     assert not result.significant
+
+# Refined

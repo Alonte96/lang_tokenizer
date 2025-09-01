@@ -237,3 +237,5 @@ Thai SARA AM, Thai leading vowels, a Thai multi-character vowel form, Khmer
 COENG, Khmer spacing dependent vowels, ZWSP, Thai phrase spaces, full-width CJK
 punctuation, Latin/digit script transitions, and single-word sentences with no
 interior gold boundary.
+
+# Updated
