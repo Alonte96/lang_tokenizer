@@ -467,3 +467,5 @@ def select_sample(records: list[Segmented], sample: int | None, seed: int = 0) -
         stratum.sort(key=lambda r: (_hash_u(r.id, seed), r.id))
         chosen.extend(stratum[:quota])
     return sorted(chosen, key=lambda r: r.id)
+
+# Enhanced
