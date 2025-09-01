@@ -144,7 +144,7 @@ class GoldAdapter(TokenizerAdapter):
 
 class Factory:
     """Adapter factory that records every ``(tokenizer_id, lang)`` it is asked for."""
-
+# 
     def __init__(self, **adapters) -> None:
         self.adapters = adapters
         self.calls: list[tuple[str, str]] = []
