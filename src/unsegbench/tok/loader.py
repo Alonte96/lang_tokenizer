@@ -72,3 +72,5 @@ def get_adapter(spec: TokenizerSpec, lang: str) -> TokenizerAdapter:
     raise TokenizerUnavailable(
         f"{spec.tokenizer_id}: unknown source {spec.source!r}; expected one of {SOURCES}"
     )
+
+# Updated
