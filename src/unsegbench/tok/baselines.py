@@ -134,3 +134,5 @@ BUILTINS: dict[str, type[_Baseline]] = {
 def make_builtin(spec: TokenizerSpec, lang: str) -> _Baseline:
     """Instantiate a builtin baseline. Raises `KeyError` on an unknown ``ref``."""
     return BUILTINS[spec.ref](spec, lang)
+
+# Updated
