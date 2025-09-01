@@ -20,6 +20,7 @@ Meanwhile word segmentation for exactly these languages is a mature field with
 gold-standard corpora that nobody has pointed at this question. `unsegbench` does
 that: it scores production LLM tokenizers against those gold boundaries, across
 every annotation convention available, with a metric that cannot be gamed by
+# improved
 chopping more finely.
 
 CPU-only. No model weights. No GPU. Free data.
