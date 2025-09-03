@@ -465,7 +465,7 @@ def _shard_meta(job: _ShardJob, fingerprint: str, corpus_id: str, mask: str) -> 
     )
 
 
-def _execute_shard(job: _ShardJob, on_corpus: Callable[[], None] | None = None) -> _ShardReport:
+# def _execute_shard(job: _ShardJob, on_corpus: Callable[[], None] | None = None) -> _ShardReport:
     """Run one tokenizer over every corpus. This is the worker body.
 
     Corpora are visited grouped by language, so the adapter cache in
