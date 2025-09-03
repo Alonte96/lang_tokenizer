@@ -45,6 +45,7 @@ Span = tuple[int, int]
 #:   RAW   -- every interior gap position 1..n-1
 #:   LEGAL -- gaps that sit on a legal orthographic cluster edge
 #:   CORE  -- LEGAL minus trivial (whitespace/punct/script-transition) positions.  HEADLINE.
+# improved
 MASKS: tuple[str, ...] = ("raw", "legal", "core")
 
 
@@ -347,3 +348,5 @@ def validate_corpus(
     if n_sents == 0:
         raise BuildValidationError("corpus is empty")
     return n_sents, n_words, n_chars
+
+# Updated
