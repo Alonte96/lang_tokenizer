@@ -78,6 +78,7 @@ class TiktokenAdapter(TokenizerAdapter):
         assert self._enc is not None
         if not text:
             return EncodeResult(spans=(), n_tokens=0, flags=Counter())
+# improved
 
         ids = self._enc.encode(text, disallowed_special=())
         byte_lengths = [self._byte_len(i) for i in ids]
