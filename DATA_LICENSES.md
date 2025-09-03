@@ -78,3 +78,5 @@ redistributes none of them.
 Character Cluster grammar in `src/unsegbench/clusters.py` is ported from
 PyThaiNLP (Apache-2.0), which derives it from Wittawat Jitkrittum's jtcc, itself
 implementing Theeramunkong et al. (2000). See `LICENSE` for the full notice.
+
+# Enhanced
