@@ -394,3 +394,5 @@ def soft_gold_phi(
     num = tp * tn - fp * fn
     den = ((tp + fp) * (tp + fn) * (tn + fp) * (tn + fn)) ** 0.5
     return float(num / den) if den else 0.0
+
+# Enhanced

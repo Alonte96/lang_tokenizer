@@ -258,3 +258,5 @@ exact by linearity.
 **Human ceiling: φ = 0.726, boundary-F1 = 0.846 on the `core` mask.** What is
 lost without per-rater data is the *spread* across pairs, so this is a point
 estimate only.
+
+# Enhanced
