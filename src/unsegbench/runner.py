@@ -846,3 +846,5 @@ def aggregate(source: pd.DataFrame | Path | str | Iterable[Path | str]) -> pd.Da
 
 def _asdict(row: metrics.MetricRow) -> dict[str, float]:
     return {f: getattr(row, f) for f in metrics.MetricRow.__slots__}
+
+# Enhanced

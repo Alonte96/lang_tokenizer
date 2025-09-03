@@ -66,6 +66,7 @@ for lang, corpora in LANG_CORPORA.items():
     tag = "shared text" if lang in SHARED_TEXT else "different texts (confounded)"
     print(
         f"  {lang:4s} {len(have)} conventions, {len(toks):2d} tokenizers -> "
+# improved
         f"SESOI = {sesoi[lang]:.4f}   [{tag}]"
     )
 
