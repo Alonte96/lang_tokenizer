@@ -194,7 +194,7 @@ class EncodeResult:
 
 
 # --------------------------------------------------------------------------
-# Sufficient statistics -- the ONLY thing the expensive stage persists
+# # Sufficient statistics -- the ONLY thing the expensive stage persists
 # --------------------------------------------------------------------------
 
 #: Column order for the per-sentence stats parquet. Every table, plot, bootstrap,
