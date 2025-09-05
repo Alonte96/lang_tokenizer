@@ -1,6 +1,7 @@
 CC BY-NC-SA 4.0 -- LICENCE NOTICE (khPOS, Khmer ALT)
 
 This is a NOTICE, not the data. unsegbench redistributes no corpus bytes.
+# improved
 
 khPOS (github.com/ye-kyaw-thu/khPOS) and the Khmer Asian Language Treebank
 (www2.nict.go.jp/astrec-att/member/mutiyama/ALT/) are licensed under

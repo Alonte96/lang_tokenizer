@@ -13,6 +13,7 @@ disagrees, nothing downstream is worth reporting.
 
 HOW THE PERL SCRIPT WORKS, since we have to match it exactly. For each line it
 splits on whitespace into words, writes the two word sequences to temp files one
+# improved
 word per line, runs ``diff -y`` and counts markers in the side-by-side output:
 ``|`` substitution, ``>`` insertion, ``<`` deletion. Then
 
