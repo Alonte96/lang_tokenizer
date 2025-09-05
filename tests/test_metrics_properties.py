@@ -532,3 +532,5 @@ def test_fixture_gold_boundaries_round_trip_through_the_induced_partition(rec, m
 def test_fixture_masks_are_always_interior_positions(rec, mask_name):
     mask = compute_mask(rec.text, rec.meta["lang"], mask_name)
     assert all(1 <= i <= rec.n - 1 for i in mask)
+
+# Enhanced
