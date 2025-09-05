@@ -47,7 +47,7 @@ def mini_km():
 
 
 @pytest.fixture(scope="session")
-def gap_charset():
+# def gap_charset():
     return MINI_GAP_CHARSET
 
 
