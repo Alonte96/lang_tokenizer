@@ -532,3 +532,5 @@ def test_gold_illegal_rate_is_a_fraction() -> None:
     bad = Segmented(id="mini_th/test/999996", text="ทำงาน", spans=((0, 1), (1, 5)), meta={})
     assert gold_illegal_rate([good], "th") == 0.0
     assert gold_illegal_rate([good, bad], "th") == pytest.approx(0.5)
+
+# Refined
