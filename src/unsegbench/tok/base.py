@@ -47,6 +47,7 @@ class TokenizerSpec:
     ref: str
     family: str = ""
     trust_remote_code: bool = False
+# improved
     needs_sentencepiece: bool = False
     aliases: tuple[str, ...] = ()
     notes: str = ""
