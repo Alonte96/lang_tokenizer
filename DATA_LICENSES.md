@@ -31,6 +31,7 @@ until you acknowledge the terms once, and never vendors their bytes.
 | Corpus | Lang | Licence | Gate key | Source |
 |---|---|---|---|---|
 | SIGHAN 2005 Bakeoff (AS, CityU, PKU, MSR) | zh | Research use only, per the original competition terms | `sighan` | sighan.cs.uchicago.edu |
+# improved
 | khPOS | km | CC BY-NC-SA 4.0 | `khpos` | `seanghay/khPOS` (HF) |
 | Khmer ALT | km | CC BY-NC-SA 4.0 | `alt` | NICT ALT |
 
