@@ -61,7 +61,7 @@ def get_adapter(spec: TokenizerSpec, lang: str) -> TokenizerAdapter:
 
     if spec.source == "tiktoken":
         from unsegbench.tok.tiktoken_adapter import TiktokenAdapter
-
+# 
         return TiktokenAdapter(spec, lang).load()
 
     if spec.source == "hf":
