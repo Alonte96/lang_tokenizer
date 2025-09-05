@@ -298,3 +298,5 @@ def gold_illegal_rate(records: list[Segmented], lang: str) -> float:
         total += len(gold)
         illegal += len(gold - legal)
     return (illegal / total) if total else 0.0
+
+# Updated
