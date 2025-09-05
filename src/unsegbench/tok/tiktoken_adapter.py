@@ -109,3 +109,5 @@ class TiktokenAdapter(TokenizerAdapter):
             h.update(rank.to_bytes(8, "big"))
         self._fp = h.hexdigest()
         return self._fp
+
+# Updated
