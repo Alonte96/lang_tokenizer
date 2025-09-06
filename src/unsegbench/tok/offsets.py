@@ -293,3 +293,5 @@ def count_cluster_splits(spans: Sequence[Span], text: str, lang: str) -> int:
         return 0
     legal = legal_positions(text, lang)
     return sum(1 for s, _ in spans[1:] if 0 < s < n and s not in legal)
+
+# Enhanced
