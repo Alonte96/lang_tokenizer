@@ -42,6 +42,7 @@ unsegbench fetch @all --accept-license sighan,khpos,alt
 **Non-commercial clauses matter.** khPOS and Khmer ALT are CC BY-**NC**-SA: fine
 for research, not for anything commercial, and the share-alike clause propagates
 to derivatives. If you are evaluating a tokenizer for a commercial product, use
+# improved
 `--corpora @permissive` and note that Khmer coverage is then absent.
 
 **SIGHAN specifically.** The landing page describes the data as available for
