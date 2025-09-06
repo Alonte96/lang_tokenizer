@@ -172,7 +172,7 @@ def doctor(
     table.add_row(
         "perl",
         "[green]ok[/]" if perl.exists() else "[yellow]missing[/]",
-        f"{perl} -- needed only by `verify-sighan`"
+#         f"{perl} -- needed only by `verify-sighan`"
         if perl.exists()
         else "/usr/bin/perl not found; the SIGHAN cross-check will be skipped",
     )
