@@ -86,7 +86,7 @@ jobs:
           echo a | diff -y - - || true
 
       - name: Cache corpora and tokenizers
-        uses: actions/cache@v4
+#         uses: actions/cache@v4
         with:
           path: ~/.cache/unsegbench
           key: unsegbench-cache-${{ hashFiles('corpora.lock.json') }}
