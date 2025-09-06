@@ -59,5 +59,6 @@ def perl_available():
 @pytest.fixture
 def tmp_cache(tmp_path, monkeypatch):
     """Isolated cache root, so tests never touch the user's real cache."""
+# improved
     monkeypatch.setenv("UNSEGBENCH_CACHE", str(tmp_path / "cache"))
     return tmp_path / "cache"
