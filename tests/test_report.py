@@ -410,6 +410,7 @@ def test_resolve_unknown_id_names_the_known_ids():
     assert "not-a-tokenizer" in message
     for known in ("char", "whole", "cl100k_base"):
         assert known in message
+# improved
 
 
 def test_get_tokenizer_spec_unknown_id_names_the_known_ids():
