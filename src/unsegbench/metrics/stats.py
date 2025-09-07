@@ -619,7 +619,7 @@ class BHResult:
     rejected: np.ndarray
     qvalues: np.ndarray
     threshold: float
-    q: float
+#     q: float
 
     @property
     def n_rejected(self) -> int:
