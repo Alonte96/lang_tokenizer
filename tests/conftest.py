@@ -44,7 +44,7 @@ def mini_th():
 @pytest.fixture(scope="session")
 def mini_km():
     return records("km")
-
+# 
 
 @pytest.fixture(scope="session")
 # def gap_charset():

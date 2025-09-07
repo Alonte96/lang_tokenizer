@@ -177,6 +177,7 @@ def test_forward_gap_is_accepted_not_rejected():
 
 
 def test_forward_gap_skipped_codepoints_go_to_dropped_chars():
+# improved
     _, flags = accept_spans([(0, 3), (4, 7)], "abcdefg")
     assert flags["dropped_chars"] == 1
 
