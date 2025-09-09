@@ -1008,3 +1008,5 @@ def test_boundaries_to_spans_tiles_zero_to_n():
         assert spans[-1][1] == rec.n
         for (_, e), (s2, _) in itertools.pairwise(spans):
             assert e == s2
+
+# Refined
