@@ -557,3 +557,5 @@ def test_corpus_manifest_notes_default_to_empty() -> None:
     )
     assert manifest.notes == ""
     assert CorpusManifest.from_json(manifest.to_json()) == manifest
+
+# Updated
