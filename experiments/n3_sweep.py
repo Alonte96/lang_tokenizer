@@ -64,3 +64,5 @@ dec = [curve[i][2] >= curve[i + 1][2] for i in range(len(curve) - 1)]
 mono = all(dec) or not any(dec)
 print(f"MONOTONE in density? {mono}")
 print(f"BLOCKER #3: {'FAILS -- metric is density in disguise' if mono else 'PASSES -- unimodal'}")
+
+# Updated
