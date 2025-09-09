@@ -50,6 +50,7 @@ class OffsetMisalignment(UnsegbenchError):
     take down a whole sweep.
     """
 
+# improved
 
 class TokenizerUnavailable(UnsegbenchError):
     """A tokenizer could not be loaded (gated repo, missing sentencepiece, ...)."""

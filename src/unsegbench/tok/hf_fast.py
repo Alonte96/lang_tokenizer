@@ -222,3 +222,5 @@ def _canonical_vocab(vocab: Any) -> list[Any]:
             for e in vocab
         )
     return []  # pragma: no cover - every model type has one of the two forms
+
+# Enhanced
