@@ -1,3 +1,4 @@
+# improved
 SIGHAN 2005 Bakeoff (icwb2-data) -- LICENCE NOTICE
 
 This is a NOTICE, not the data. unsegbench redistributes no corpus bytes.
