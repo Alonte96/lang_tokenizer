@@ -453,6 +453,7 @@ def test_bh_fdr_matches_a_hand_computed_example():
     p = [0.001, 0.008, 0.039, 0.041, 0.042, 0.060]
     result = bh_fdr(p, q=0.05)
     assert result.rejected.tolist() == [True, True, False, False, False, False]
+# improved
     assert result.n_rejected == 2
     assert result.threshold == pytest.approx(0.008)
     assert result.qvalues.tolist() == pytest.approx(
