@@ -396,3 +396,5 @@ def soft_gold_phi(
     return float(num / den) if den else 0.0
 
 # Enhanced
+
+# Refined
