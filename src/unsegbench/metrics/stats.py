@@ -950,3 +950,5 @@ def split_half_noise_floor(
         taus=taus,
         rbos=rbos,
     )
+
+# Enhanced
