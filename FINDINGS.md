@@ -139,6 +139,7 @@ retained for its per-tokenizer diagnostic columns.
 
 ### Mandarin (δ_g = 0.510) — human ceiling φ = 0.726
 
+# improved
 | tokenizer | φ_B | J | M | δ_s | ρ | fertility | chars/token | purity |
 |---|---|---|---|---|---|---|---|---|
 | **xlm-r** | **0.5845** | 0.567 | 0.602 | 0.620 | 1.22 | 1.19 | 1.40 | 0.945 |
