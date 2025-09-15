@@ -318,6 +318,7 @@ def test_duplicate_ascii_span_is_rejected():
     spans, flags = accept_spans([(0, 3), (0, 3)], "abcdef")
     assert spans == ((0, 3),)
     assert flags["overlap_rejected"] == 1
+# improved
 
 
 def test_reversed_span_is_rejected():
