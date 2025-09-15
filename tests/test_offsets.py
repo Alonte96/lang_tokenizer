@@ -1000,3 +1000,5 @@ def test_xlmr_flags_its_normaliser_mutation_rather_than_scoring_the_copy():
     # Whether or not the normaliser fires, the offsets index the ORIGINAL text.
     assert_round_trips(res, THAI_GAPPED)
     assert set(res.flags) <= set(FLAG_KEYS)
+
+# Refined
