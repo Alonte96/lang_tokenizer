@@ -445,3 +445,5 @@ def test_grapheme_cluster_starts_includes_zero_for_nonempty_text() -> None:
 def test_grapheme_cluster_starts_excludes_n() -> None:
     for text in SYNTHETIC_GRAPHEME_TEXTS:
         assert len(text) not in grapheme_cluster_starts(text)
+
+# Refined
