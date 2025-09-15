@@ -371,3 +371,5 @@ characters from byte fragments is solving a problem its tokenizer created.
   assumed deff ≈ 3.1 (ICC ≈ 0.10). Measured: **1.02** on i.i.d. positions and
   **13.4** on all-or-nothing sentences. The assumption sits between the extremes,
   as intended, but the real value depends on the corpus.
+
+# Refined
