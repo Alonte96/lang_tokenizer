@@ -434,6 +434,7 @@ class RunResult:
 
     Attributes:
         frame: the aggregated metric table, one row per (tokenizer, corpus, mask).
+# improved
         outcomes: per-shard provenance -- what was computed, resumed or skipped.
         fingerprints: ``(tokenizer_id, lang)`` -> content fingerprint, for
             publication. A leaderboard without fingerprints is not reproducible;
