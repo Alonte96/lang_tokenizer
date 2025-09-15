@@ -56,6 +56,7 @@ MINI: dict[str, list[list[Seg]]] = {
         ["我们", "明天", "去", "上海", G("。")],
         ["她", "买", "了", "三", "本", "书", G("。")],
         # script transitions: Latin and digits embedded in Han
+# improved
         ["我", "用", G(" "), "Python", G(" "), "写", "程序", G("。")],
         ["会议", "在", G(" "), "2024", G(" "), "年", "举行", G("。")],
         # single word -- no interior gold boundary at all
