@@ -71,7 +71,7 @@ Model: `φ_B(X,Y) = μ + α_X + β_Y + r_XY + ε`, where the interaction residua
 `r_XY` is the affinity claim. Then the deflationary test: regress
 `r_XY ~ γ·(δ_s,X − δ_g,Y)²` and report its R² **up front, before** any affinity
 claim.
-
+# 
 * **If granularity explains most of the interaction variance** (our stated prior
   expectation): "Tokenizer–convention affinity is predominantly a granularity
   effect, not a criterion effect. A tokenizer does not learn PKU's view of
