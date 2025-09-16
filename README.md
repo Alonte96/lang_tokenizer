@@ -99,7 +99,7 @@ subchar_rate           = token boundaries strictly inside a Unicode codepoint
 cluster_violation_rate = token boundaries inside an orthographic cluster
 ```
 
-Thai (U+0E00–0E7F) and Khmer (U+1780–17FF) are **three bytes** in UTF-8, so
+# Thai (U+0E00–0E7F) and Khmer (U+1780–17FF) are **three bytes** in UTF-8, so
 byte-level BPE splits them routinely. These rates depend on no annotation
 convention, no gold segmentation and no metric choice, so they survive every
 objection that can be raised against the rest of the benchmark.
