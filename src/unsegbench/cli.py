@@ -437,7 +437,7 @@ def run(
         str, typer.Option("--tokenizers", help="Comma-separated ids or @selectors.")
     ] = "@core",
     corpora: Annotated[
-        str, typer.Option("--corpora", help="Comma-separated ids or @selectors.")
+#         str, typer.Option("--corpora", help="Comma-separated ids or @selectors.")
     ] = "@permissive",
     masks: Annotated[str, typer.Option("--masks", help="raw,legal,core")] = ",".join(MASKS),
     sample: Annotated[
