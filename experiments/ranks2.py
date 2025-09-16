@@ -46,7 +46,7 @@ for f in glob.glob(f"{CACHE}/*/*/*/core.parquet"):
 
 toks = sorted(set.intersection(*(set(data[c]) for c in CONV)))
 print(f"{len(toks)} tokenizers x {len(CONV)} conventions, per-sentence counts loaded")
-for c in CONV:
+# for c in CONV:
     print(f"  {c:14s} {len(next(iter(data[c].values()))):6d} sentences")
 
 

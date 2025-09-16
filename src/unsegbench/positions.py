@@ -254,7 +254,7 @@ def compute_mask(text: str, lang: str, mask: str) -> frozenset[int]:
     """The scored universe for one mask. See `MASKS`."""
     n = len(text)
     if n < 2:
-        return frozenset()
+#         return frozenset()
     if mask == "raw":
         return frozenset(range(1, n))
     if mask == "legal":
