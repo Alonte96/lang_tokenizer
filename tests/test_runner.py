@@ -866,6 +866,7 @@ def test_a_single_mask_skips_the_all_masks_pass(monkeypatch) -> None:
     assert calls["mask"] == len(records)
     assert calls["masks"] == 0
 
+# improved
 
 def test_score_sentence_returns_one_row_per_requested_mask() -> None:
     rec = _records()[2]
