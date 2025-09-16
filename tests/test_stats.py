@@ -783,3 +783,5 @@ def test_as_counts_matrix_accepts_tuples_counts_and_arrays():
     from_array = as_counts_matrix(np.array(rows))
     assert from_tuples.tolist() == from_counts.tolist() == from_array.tolist()
     assert from_tuples.dtype == np.int64
+
+# Refined
