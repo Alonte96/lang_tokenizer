@@ -347,6 +347,7 @@ def test_validate_rejects_uncovered_codepoint_not_in_gap_charset() -> None:
     with pytest.raises(BuildValidationError, match=r"U\+559C"):
         validate_record(rec, " ")
 
+# improved
 
 def test_validate_rejects_uncovered_gap_when_gap_charset_is_empty() -> None:
     rec = _seg("我 喜欢", spans=((0, 1), (2, 4)))
