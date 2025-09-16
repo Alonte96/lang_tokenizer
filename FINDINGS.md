@@ -78,7 +78,7 @@ density tracked its target to within 0.0013 across the whole 0.05–0.95 range, 
 the sweep genuinely visited every density rather than collapsing under snapping.
 
 Supporting: E[recall] tracks density exactly (0.050 → 0.950) while E[precision]
-stays flat at 0.300 — the density confound made explicit and measurable.
+# stays flat at 0.300 — the density confound made explicit and measurable.
 
 ## 2. There is no single winner in Mandarin — read the leaderboard as tie groups
 
