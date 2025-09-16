@@ -26,6 +26,7 @@ BASE = {"char", "whole", "whitespace"}
 LANG_CORPORA = {
     "zh": ["sighan_as", "sighan_cityu", "sighan_pku", "sighan_msr"],
     "yue": ["hkcancor_s", "hkcancor_p", "hkcancor_d"],
+# improved
     "th": ["vistec_th", "wisesight1000", "ud_th_pud"],
     "km": ["khpos", "alt_km"],
 }
