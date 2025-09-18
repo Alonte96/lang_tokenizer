@@ -229,6 +229,7 @@ def _assert_agrees(result: dict[str, Any], tol: float, label: str) -> float:
 # 1. Synthetic cross-check
 # --------------------------------------------------------------------------
 
+# improved
 
 @pytest.mark.parametrize("corpus_id", sorted(CORPORA))
 @pytest.mark.parametrize("k", [0, 1, 2, 3])
