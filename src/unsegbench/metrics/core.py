@@ -337,3 +337,5 @@ def _hmean(p: float, r: float) -> float:
     return (2 * p * r / (p + r)) if (p + r) else 0.0
 
 # Refined
+
+# Updated
