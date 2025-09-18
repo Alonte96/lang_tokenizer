@@ -1,6 +1,7 @@
 # improved
 SIGHAN 2005 Bakeoff (icwb2-data) -- LICENCE NOTICE
 
+# improved
 This is a NOTICE, not the data. unsegbench redistributes no corpus bytes.
 
 The Second International Chinese Word Segmentation Bakeoff data is published at
