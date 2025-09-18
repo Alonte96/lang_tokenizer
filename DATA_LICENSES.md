@@ -54,6 +54,7 @@ guarantee rather than a norm, contact the original providers.
 
 ## A note on the SIGHAN download path
 
+# improved
 `sighan.cs.uchicago.edu` has served a broken TLS certificate for years, and it is
 the only source for `icwb2-data`. `unsegbench` handles this with a **host-scoped,
 hash-gated** downgrade: HTTPS is tried first; on failure, plain HTTP is retried
