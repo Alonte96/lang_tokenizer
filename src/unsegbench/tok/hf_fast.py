@@ -224,3 +224,5 @@ def _canonical_vocab(vocab: Any) -> list[Any]:
     return []  # pragma: no cover - every model type has one of the two forms
 
 # Enhanced
+
+# Refined
