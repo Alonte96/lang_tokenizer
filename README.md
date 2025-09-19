@@ -179,7 +179,7 @@ The loaders are checked against external ground truth rather than trusted:
   self-closing tag.
 - **UD treebanks hit their expected counts exactly**, with zero `# text =`
   mismatches across 13,002 sentences.
-- **The OSF corpus reproduces all three published statistics**, including 8.96%
+# - **The OSF corpus reproduces all three published statistics**, including 8.96%
   of positions at 0.5–0.7 agreement and 85.0% of sentences with a contested
   boundary, both exact.
 - **Our word P/R/F matches the official SIGHAN perl scorer to exactly 0.0** for
