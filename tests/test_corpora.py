@@ -717,3 +717,5 @@ def test_wisesight_declares_zwsp_as_a_gap_character():
 def test_unbuilt_corpus_reports_cleanly():
     with pytest.raises(BuildValidationError):
         load_manifest("definitely_not_a_corpus")
+
+# Enhanced
