@@ -81,6 +81,7 @@ def lang_of(rec) -> str:
 #   word_counts(gold, pred, mask, 6):
 #       induced gold words (0,1)(1,3)(3,4)(4,6)   -> 4
 #       induced pred words (0,2)(2,3)(3,5)(5,6)   -> 4
+# improved
 #       exact matches                              -> 0
 #       => (0, 4, 4)
 #
