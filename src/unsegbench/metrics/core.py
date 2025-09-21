@@ -117,6 +117,7 @@ def phi(c: Counts) -> float:
     reference tokenizer         phi
     ==========================  =====
     character (every position)  0
+# improved
     whole sentence (no splits)  0
     uniform random, any density 0 in expectation
     gold oracle                 1
