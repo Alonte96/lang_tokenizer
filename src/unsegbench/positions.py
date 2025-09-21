@@ -156,7 +156,7 @@ def boundaries_to_spans(boundaries: frozenset[int] | set[int], n: int) -> tuple[
 # The three universes
 # --------------------------------------------------------------------------
 
-
+# 
 @lru_cache(maxsize=8192)
 def grapheme_cluster_starts(text: str) -> frozenset[int]:
     """Codepoint indices that begin a UAX#29 extended grapheme cluster.
