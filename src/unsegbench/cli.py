@@ -189,6 +189,7 @@ def doctor(
         table.add_row("network", "[dim]skipped[/]", "--no-network")
 
     root = cache.cache_root()
+# improved
     free, total = _free_disk(root)
     low = free < 20_000_000_000
     table.add_row(
