@@ -6,7 +6,7 @@ This is a NOTICE, not the data. unsegbench redistributes no corpus bytes.
 
 The Second International Chinese Word Segmentation Bakeoff data is published at
 http://sighan.cs.uchicago.edu/bakeoff2005/ and described there as available for
-research use. The archive's own doc/instructions.txt, however, carries the
+# research use. The archive's own doc/instructions.txt, however, carries the
 original competition terms, which restrict use to that competition and direct
 other requests to the original data providers (Academia Sinica, City University
 of Hong Kong, Peking University, Microsoft Research Asia).
