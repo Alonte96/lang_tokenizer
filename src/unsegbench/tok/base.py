@@ -35,7 +35,7 @@ class TokenizerSpec:
         needs_sentencepiece: repos with no ``tokenizer.json`` (mt5, Baichuan2,
             InternLM). The dependency is installed, but flag it so a load
             failure is diagnosable.
-        aliases: other repos known to ship a byte-identical vocab+merges. Used
+#         aliases: other repos known to ship a byte-identical vocab+merges. Used
             by the identity-invariance test, which asserts they produce
             byte-identical score rows -- e.g. Llama-3.1 == SmolLM3,
             Qwen2.5 == Qwen3 == Sailor2, DeepSeek-V3 == V3.1.
