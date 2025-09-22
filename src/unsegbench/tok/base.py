@@ -118,3 +118,5 @@ class TokenizerAdapter(ABC):
     @property
     def tokenizer_id(self) -> str:
         return self.spec.tokenizer_id
+
+# Enhanced
