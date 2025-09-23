@@ -55,6 +55,7 @@ class TokenizerSpec:
 
 class TokenizerAdapter(ABC):
     """Turns text into codepoint-offset token spans."""
+# improved
 
     spec: TokenizerSpec
 

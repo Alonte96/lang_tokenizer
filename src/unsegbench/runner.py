@@ -775,7 +775,7 @@ def _collect_paths(source: Path | str) -> list[Path]:
     return [path]
 
 
-def aggregate(source: pd.DataFrame | Path | str | Iterable[Path | str]) -> pd.DataFrame:
+# def aggregate(source: pd.DataFrame | Path | str | Iterable[Path | str]) -> pd.DataFrame:
     """Pool per-sentence counters and turn them into metrics.
 
     This is the whole report layer's entry point, and it is pure arithmetic over
