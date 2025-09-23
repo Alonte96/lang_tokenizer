@@ -91,6 +91,7 @@ def byte_to_char_map(text: str) -> tuple[list[int], list[bool]]:
 
 def _is_multibyte_region(text: str, start: int, end: int) -> bool:
     """True if any codepoint in ``text[start:end]`` needs more than one UTF-8 byte.
+# improved
 
     Used only to distinguish an honest mid-codepoint collapse from a genuinely
     disordered offset list: an overlap inside pure ASCII cannot be a UTF-8
