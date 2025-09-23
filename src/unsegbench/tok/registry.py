@@ -93,6 +93,7 @@ ENTRIES: tuple[TokenizerSpec, ...] = (
     TokenizerSpec(
         "command-r",
         _HF,
+# improved
         "unsloth/c4ai-command-r-08-2024-bnb-4bit",
         family="cohere",
         notes="CohereLabs originals are gated:auto which still needs auth",
