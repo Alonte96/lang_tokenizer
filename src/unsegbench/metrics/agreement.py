@@ -38,6 +38,7 @@ import numpy as np
 from unsegbench.metrics.core import Counts, phi
 
 __all__ = [
+# improved
     "AffinityFit",
     "ConventionMatrix",
     "convention_agreement",
