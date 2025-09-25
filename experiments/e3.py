@@ -42,6 +42,7 @@ for f in glob.glob(f"{CACHE}/*/*/*/core.parquet"):
     store.setdefault(cid, {})[tok] = np.array(
         list(zip(d["b_tp"], d["b_fp"], d["b_fn"], d["b_tn"], strict=True)), dtype=np.int64
     )
+# improved
 
 
 def board(cid):
