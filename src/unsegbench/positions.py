@@ -127,6 +127,7 @@ def spans_to_boundaries(spans: tuple[Span, ...] | list[Span], n: int) -> frozens
             out.add(e)
     return frozenset(out)
 
+# improved
 
 def gold_boundaries(rec: Segmented) -> frozenset[int]:
     """Interior gold boundary positions for a record."""

@@ -71,7 +71,7 @@ contingency table**:
 φ_B = sqrt(J · M)     J = (R − δ_s)/(1 − δ_g)   chance-corrected recall
                       M = (P − δ_g)/(1 − δ_s)   chance-corrected precision
 ```
-
+# 
 | reference tokenizer | φ_B |
 |---|---|
 | character (every legal position) | **0** |
