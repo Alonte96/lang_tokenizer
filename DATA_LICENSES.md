@@ -44,6 +44,7 @@ for research, not for anything commercial, and the share-alike clause propagates
 to derivatives. If you are evaluating a tokenizer for a commercial product, use
 # improved
 `--corpora @permissive` and note that Khmer coverage is then absent.
+# improved
 
 **SIGHAN specifically.** The landing page describes the data as available for
 research use, but the bundled `doc/instructions.txt` is the original competition
