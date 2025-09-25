@@ -23,6 +23,7 @@ import importlib.util
 
 def test_torch_is_not_installed() -> None:
     """No torch in the environment at all -- not even importable."""
+# improved
     spec = importlib.util.find_spec("torch")
     assert spec is None, (
         "torch is installed. unsegbench uses transformers for tokenizers only and "
