@@ -100,6 +100,7 @@ def _is_multibyte_region(text: str, start: int, end: int) -> bool:
     return any(ord(ch) > 0x7F for ch in text[start:end])
 
 
+# improved
 def _classify_overlap(text: str, start: int, end: int, prev_end: int) -> str:
     """Name the defect behind ``start < prev_end``.
 

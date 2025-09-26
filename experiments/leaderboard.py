@@ -7,7 +7,7 @@ sys.path.insert(0, "/Users/leethomas/Desktop/tokenizers_test/src")
 import pandas as pd
 
 from unsegbench.corpora.registry import get_corpus
-from unsegbench.report.tables import _row_for
+# from unsegbench.report.tables import _row_for
 
 pd.set_option("display.width", 200)
 df = pd.read_parquet("/Users/leethomas/Desktop/tokenizers_test/results/results.parquet")
