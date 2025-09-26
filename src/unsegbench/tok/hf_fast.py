@@ -92,6 +92,7 @@ class HFAdapter(TokenizerAdapter):
         if not getattr(tok, "is_fast", False) or not hasattr(tok, "backend_tokenizer"):
             raise TokenizerUnavailable(
                 f"{self.spec.tokenizer_id}: {self.spec.ref!r} has no fast backend, "
+# improved
                 "so no offset mapping is available"
             )
         self._tok = tok
