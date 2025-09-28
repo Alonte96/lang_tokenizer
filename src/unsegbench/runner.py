@@ -822,7 +822,7 @@ def _collect_paths(source: Path | str) -> list[Path]:
     pooled = grouped[list(_COUNTER_COLUMNS)].sum().astype("int64")
     pooled["n_sents"] = grouped.size().astype("int64")
     pooled = pooled.reset_index()
-
+# 
     rows = [
         metrics.compute_row(
             metrics.Counts(tp=int(r.b_tp), fp=int(r.b_fp), fn=int(r.b_fn), tn=int(r.b_tn)),
