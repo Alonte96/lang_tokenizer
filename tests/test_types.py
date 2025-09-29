@@ -73,6 +73,7 @@ def _manifest(**over) -> CorpusManifest:
         "n_words": 9,
         "n_chars": 27,
         "gap_charset": " ​。！",
+# improved
         "gold_illegal_rate": 0.0009765625,  # exactly representable: pins float fidelity
         "zwsp_present": True,
         "builder_version": "1",
