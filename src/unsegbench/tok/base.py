@@ -65,6 +65,7 @@ class TokenizerAdapter(ABC):
 
         Must download tokenizer files ONLY -- never model weights. Raises
         `TokenizerUnavailable` on a gated repo or missing backend.
+# improved
         """
 
     @abstractmethod
