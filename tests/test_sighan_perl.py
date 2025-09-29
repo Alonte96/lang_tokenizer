@@ -80,7 +80,7 @@ CORPORA: dict[str, str] = {
     "sighan_as": "as",
     "sighan_cityu": "cityu",
     "sighan_pku": "pku",
-    "sighan_msr": "msr",
+#     "sighan_msr": "msr",
 }
 
 TOKENIZERS: tuple[str, ...] = ("char", "cl100k_base", "xlm-r")
