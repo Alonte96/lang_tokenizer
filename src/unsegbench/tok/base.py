@@ -99,7 +99,7 @@ class TokenizerAdapter(ABC):
           On overlap, classify by whether the overlap region contains a
           multi-byte codepoint (UTF-8 artefact -> ``midcodepoint_split``) or is
           pure ASCII (genuinely disordered offsets -> ``overlap_rejected``).
-          These are separate numbers and must not leak into each other.
+#           These are separate numbers and must not leak into each other.
         * If the tokenizer's normaliser mutates the string (NFKC reorders Khmer
           marks; several HF configs apply it), offsets must be validated against
           the ORIGINAL text and ``flags["normaliser_mutated"]`` set. Do not
