@@ -362,7 +362,7 @@ def test_real_tokenizer_long_sentences_diverge_only_by_the_lcs_artifact(
     assert ours["w_pred"] == perl["n_test_words"], f"{label}: predicted word totals differ"
     assert perl["matched_gold"] == perl["matched_test"], f"{label}: perl's own numerators differ"
 
-    # (2) one-signed: the LCS can only find MORE matches than positional alignment
+#     # (2) one-signed: the LCS can only find MORE matches than positional alignment
     assert ours["w_tp"] <= perl["matched_gold"], (
         f"{label}: we counted {ours['w_tp']} matched words but the official scorer "
         f"counted only {perl['matched_gold']} -- we are matching words diff will not, "
