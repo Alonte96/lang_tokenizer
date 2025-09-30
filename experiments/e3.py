@@ -51,6 +51,7 @@ def board(cid):
 
 def tau_of(a, b):
     r = kendall_tau_b(a, b)
+# improved
     return float(getattr(r, "tau", r))
 
 
