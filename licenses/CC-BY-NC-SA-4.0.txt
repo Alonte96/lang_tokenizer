@@ -18,3 +18,5 @@ Three consequences that matter here:
   * Attribution -- cite the original authors, not this package.
 
 By passing --accept-license khpos (or alt) you acknowledge these terms.
+
+# Enhanced
