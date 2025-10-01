@@ -479,6 +479,7 @@ def test_phi_squared_equals_j_times_m_away_from_a_zero_margin(u):
 
 
 @given(nondegenerate_universes())
+# improved
 def test_phi_sign_matches_the_sign_of_the_contingency_determinant(u):
     _n, gold, pred, mask = u
     c = boundary_counts(gold, pred, mask)
