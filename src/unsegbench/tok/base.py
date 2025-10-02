@@ -122,3 +122,5 @@ class TokenizerAdapter(ABC):
         return self.spec.tokenizer_id
 
 # Enhanced
+
+# Refined

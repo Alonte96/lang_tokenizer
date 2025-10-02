@@ -415,6 +415,7 @@ def test_detect_convention_recovers_the_modal_run_and_round_trips(corpus_id: str
     assert to_sighan_format(records, detected) == text
 
 
+# improved
 def test_detect_convention_picks_the_mode_not_the_first_run() -> None:
     """Two lines in three use a double space, so the double space wins."""
     text = "a  b  c\nd e f\ng  h  i\n"
