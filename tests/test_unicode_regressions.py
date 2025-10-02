@@ -447,3 +447,5 @@ def test_grapheme_cluster_starts_excludes_n() -> None:
         assert len(text) not in grapheme_cluster_starts(text)
 
 # Refined
+
+# Refined
