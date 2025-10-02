@@ -11,6 +11,7 @@ and its 70-language extension
 drop these languages because they are isolating, and the latter concedes that the
 field's standard word-level metrics don't even apply to them:
 
+# improved
 > Fertility is simple to implement but can be difficult to generalize
 > crosslinguistically, as wordhood is often operationalized as whitespace-separated
 > orthographic units. **Not all languages use whitespaces, e.g. Mandarin Chinese,
