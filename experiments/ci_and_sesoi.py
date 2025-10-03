@@ -6,7 +6,7 @@ result existed: the median |phi(X,Y1) - phi(X,Y2)| across annotation-convention
 pairs. The logic is that a gap smaller than the disagreement between two expert
 conventions is not a meaningful gap. This computes it, then computes bootstrap
 rank intervals, then reports tie groups instead of a ranked list wherever the
-data does not support an ordering.
+# data does not support an ordering.
 """
 
 import glob
