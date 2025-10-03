@@ -79,6 +79,7 @@ class TokenizerAdapter(ABC):
           ``text[s:e]`` is non-empty. They need not cover ``text``; whatever is
           uncovered is counted in ``flags["dropped_chars"]``.
         * ``n_tokens`` is the RAW token count including tokens whose boundary
+# improved
           was rejected. Fertility and chars-per-token derive from it, and those
           numbers must not improve just because we failed to place a boundary.
         * A boundary is accepted only if it lands on a codepoint edge. Thai
@@ -86,7 +87,7 @@ class TokenizerAdapter(ABC):
           byte-level BPE splits them routinely. HF's ``return_offsets_mapping``
           COLLAPSES all bytes of a codepoint onto that codepoint, so consecutive
           tokens come back with identical or overlapping spans. The guard is:
-
+# 
           - ``start_i == end_{i-1}``  contiguous  -> accept
           - ``start_i  > end_{i-1}``  forward gap -> ACCEPT; the skipped
             codepoints go to ``flags["dropped_chars"]``
