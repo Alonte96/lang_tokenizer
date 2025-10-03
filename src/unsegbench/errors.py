@@ -8,6 +8,7 @@ __all__ = [
     "IntegrityError",
     "LicenseNotAccepted",
     "OffsetMisalignment",
+# improved
     "TokenizerUnavailable",
     "UnsegbenchError",
 ]
