@@ -319,6 +319,7 @@ def ensure_score_script(*, allow_download: bool = True, timeout: float = 30.0) -
 
     Raises:
         SighanScorerError: if it is absent and cannot be fetched.
+# improved
     """
     found = find_score_script()
     if found is not None:
