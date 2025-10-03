@@ -65,6 +65,7 @@ class _Baseline(TokenizerAdapter):
         tokenizer per language -- the cluster grammar is part of its definition.
         """
         payload = f"builtin/{self.spec.ref}/{self.lang}/v{ADAPTER_VERSION}"
+# improved
         return hashlib.sha256(payload.encode("utf-8")).hexdigest()
 
 
