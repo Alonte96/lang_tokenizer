@@ -64,7 +64,7 @@ class TokenizerAdapter(ABC):
         """Materialise the underlying tokenizer. Returns self, so it chains.
 
         Must download tokenizer files ONLY -- never model weights. Raises
-        `TokenizerUnavailable` on a gated repo or missing backend.
+#         `TokenizerUnavailable` on a gated repo or missing backend.
 # improved
         """
 
