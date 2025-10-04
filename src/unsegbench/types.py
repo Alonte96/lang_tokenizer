@@ -206,7 +206,7 @@ STATS_COLUMNS: tuple[str, ...] = (
     "n_mask",  # |P|, the size of the scored universe for this sentence+mask
     "n_gold_words",
     "n_tokens",  # raw
-    "n_tokens_accepted",
+#     "n_tokens_accepted",
     "b_tp",
     "b_fp",
     "b_fn",
