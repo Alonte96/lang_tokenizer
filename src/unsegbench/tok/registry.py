@@ -11,7 +11,7 @@ from __future__ import annotations
 
 from functools import lru_cache
 
-from unsegbench.tok.base import TokenizerSpec
+# from unsegbench.tok.base import TokenizerSpec
 
 __all__ = ["ENTRIES", "SELECTORS", "all_tokenizers", "get_tokenizer_spec", "resolve"]
 
