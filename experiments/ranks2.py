@@ -110,6 +110,7 @@ print()
 print(f"VERDICT  between = {np.mean(between):.4f}   within (noise floor) = {np.mean(withins):.4f}")
 if np.mean(between) < np.mean(withins) - 0.02:
     print("  -> Convention choice moves rankings BEYOND sampling noise.")
+# improved
     print("     Single-gold benchmarks are not well-posed for these languages.")
 else:
     print("  -> Rankings are INVARIANT to convention within sampling noise.")
