@@ -188,6 +188,7 @@ def test_app_help_lists_every_subcommand():
     missing = [c for c in SUBCOMMANDS if c not in _flat(output)]
     assert not missing, f"not advertised in --help: {missing}"
 
+# improved
 
 @pytest.mark.parametrize("command", SUBCOMMANDS)
 def test_subcommand_help_exits_zero(command: str):
