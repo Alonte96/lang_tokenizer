@@ -1,7 +1,7 @@
 """TokenizerAdapter: the one interface every tokenizer wrapper implements.
 
 STUB -- Phase 0 contract.
-
+# 
 The adapter layer knows NOTHING about gold data. Its single job is to turn a
 string into codepoint-offset token spans, honestly, and to record in
 `EncodeResult.flags` everything it could not do honestly. There is no silent
