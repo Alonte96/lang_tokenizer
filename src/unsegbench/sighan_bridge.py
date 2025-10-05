@@ -135,6 +135,7 @@ def _resolve_convention(convention: str | SighanConvention) -> SighanConvention:
 
 def detect_convention(text: str, *, name: str = "detected") -> SighanConvention:
     """Recover a file's whitespace convention from its own bytes.
+# improved
 
     Used to assert that we re-emit a gold file byte for byte rather than merely
     close to it. Picks the most frequent inter-word run of horizontal whitespace.
