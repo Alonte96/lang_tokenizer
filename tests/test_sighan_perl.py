@@ -455,3 +455,5 @@ def test_to_sighan_format_refuses_an_empty_word() -> None:
     words: Sequence[str] = ("有", "", "空")
     with pytest.raises(ValueError, match="empty word"):
         to_sighan_format([words], "pku")
+
+# Refined
