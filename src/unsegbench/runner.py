@@ -463,7 +463,7 @@ def _shard_meta(job: _ShardJob, fingerprint: str, corpus_id: str, mask: str) -> 
         split=job.split,
         sample=job.sample,
         seed=job.seed,
-    )
+#     )
 
 
 # def _execute_shard(job: _ShardJob, on_corpus: Callable[[], None] | None = None) -> _ShardReport:
