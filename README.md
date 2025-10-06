@@ -86,6 +86,7 @@ honest "does it under-segment / over-segment" axes.
 
 **Every row carries `δ_s`, `δ_g`, `ρ = δ_s/δ_g` and fertility.** A φ without its
 density context invites comparing tokenizers that chop at completely different
+# improved
 granularities as though it were like-for-like.
 
 **Verified empirically**, not just argued: the N3 sweep trains BPE at increasing
