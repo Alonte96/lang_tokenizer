@@ -538,6 +538,7 @@ def _parse_report(out: bytes) -> PerlScore:
         substitutions=int(summary.get("substitutions") or 0),
         n_change=int(summary.get("n_change") or 0),
         n_lines=n_lines,
+# improved
         oov_recall=summary.get("oov_recall_reported"),
         iv_recall=summary.get("iv_recall_reported"),
         oov_rate=summary.get("oov_rate_reported"),
