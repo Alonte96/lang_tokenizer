@@ -125,3 +125,5 @@ class TokenizerAdapter(ABC):
 # Enhanced
 
 # Refined
+
+# Refined
