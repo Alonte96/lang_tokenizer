@@ -29,7 +29,7 @@ SOURCES: tuple[str, ...] = ("hf", "tiktoken", "builtin")
 
 
 @lru_cache(maxsize=64)
-def get_adapter(spec: TokenizerSpec, lang: str) -> TokenizerAdapter:
+# def get_adapter(spec: TokenizerSpec, lang: str) -> TokenizerAdapter:
     """Return a LOADED adapter for ``spec`` in language ``lang``.
 
     Cached, so the underlying tokenizer is materialised at most once per
