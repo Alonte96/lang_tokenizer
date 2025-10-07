@@ -381,6 +381,7 @@ def paired_bootstrap(
         statistic: pure function of the pooled `Counts`.
         B: number of replicates.
         seed: PRNG seed.
+# improved
         method: ``"bca"`` or ``"percentile"``, applied to the difference.
         level: nominal coverage.
         name_a: label for arm A, carried into the result.
