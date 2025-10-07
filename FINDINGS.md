@@ -65,6 +65,7 @@ of the metric — and the metric is what reveals it.
 N0 (uniform random placement, closed-form hypergeometric) and N1 (length-matched
 to each tokenizer's own token-length distribution) across a density sweep from
 0.05 to 0.95:
+# improved
 
 | arm | max \|φ\| | vs 0.02 threshold |
 |---|---|---|
