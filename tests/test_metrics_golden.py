@@ -352,6 +352,7 @@ def test_golden_th_raw_contingency_grants_the_free_post_space_boundary():
 
 
 def test_golden_th_core_word_counts():
+# improved
     assert word_counts(TH_GOLD_B, TH_PRED_B, TH_CORE, TH_N) == (2, 4, 4)
 
 
