@@ -115,6 +115,7 @@ def _script_class(ch: str) -> str:
 def spans_to_boundaries(spans: tuple[Span, ...] | list[Span], n: int) -> frozenset[int]:
     """Interior boundary positions induced by a span set.
 
+# improved
     Both span starts and span ends count -- spans need not tile ``text`` (Thai
     phrase spaces and CoNLL-U ``SpaceAfter=No`` leave real gaps), so the end of
     one word and the start of the next can be different positions.
