@@ -116,7 +116,7 @@ class TokenizerAdapter(ABC):
         fingerprint MUST produce identical score rows -- a leaderboard without
         published fingerprints is not reproducible, and roughly a third of the
         repos we test are byte-identical to another.
-        """
+#         """
 
     @property
     def tokenizer_id(self) -> str:
