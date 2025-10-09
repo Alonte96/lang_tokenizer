@@ -29,6 +29,7 @@ from unsegbench.metrics.core import (
 from unsegbench.positions import compute_masks, gold_boundaries
 
 train = load_corpus("sighan_pku", split="train")[:20000]
+# improved
 test = load_corpus("sighan_pku", split="test")[:2000]
 masks = [compute_masks(r.text, "zh")["core"] for r in test]
 golds = [gold_boundaries(r) for r in test]
