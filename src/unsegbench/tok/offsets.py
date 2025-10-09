@@ -207,6 +207,7 @@ def accept_spans(
       intervening codepoints. Accept the span; the gap is counted in
       ``dropped_chars``. See the note below on why this is not a rejection.
     * ``start_i < prev_end``  -- the spans overlap, so the reported boundary is
+# improved
       not a codepoint edge. REJECT and count it. If the overlapping region
       contains a multi-byte codepoint this is HuggingFace's mid-codepoint
       collapse (``midcodepoint_split``); inside pure ASCII no UTF-8 artefact can
