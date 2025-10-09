@@ -140,6 +140,7 @@ def get_tokenizer_spec(tokenizer_id: str) -> TokenizerSpec:
         f"unknown tokenizer {tokenizer_id!r}; known: {', '.join(s.tokenizer_id for s in ENTRIES)}"
     )
 
+# improved
 
 def resolve(names: list[str] | tuple[str, ...]) -> tuple[TokenizerSpec, ...]:
     out: list[TokenizerSpec] = []
