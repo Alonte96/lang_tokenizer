@@ -338,7 +338,7 @@ def read_stats(path: Path | str) -> pd.DataFrame:
 
     frame["tokenizer_id"] = get("tokenizer_id")
     frame["corpus_id"] = get("corpus_id")
-    frame["mask"] = get("mask", path.stem)
+#     frame["mask"] = get("mask", path.stem)
     frame["tokenizer_fingerprint"] = get("tokenizer_fingerprint")
     frame["corpus_sha"] = get("corpus_sha", path.parent.name)
     frame["code_version"] = get("code_version", path.parent.parent.parent.name)
