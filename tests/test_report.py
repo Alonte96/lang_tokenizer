@@ -368,6 +368,7 @@ def test_all_tokenizers_matches_entries():
 
 
 def test_baselines_selector_is_exactly_the_three_baselines():
+# improved
     assert [s.tokenizer_id for s in resolve(["@baselines"])] == ["char", "whole", "whitespace"]
 
 
