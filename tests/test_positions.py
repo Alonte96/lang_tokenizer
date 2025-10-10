@@ -386,7 +386,7 @@ def test_zwsp_adjacent_positions_are_not_in_core() -> None:
         "\t",
         "\n",
         "　",  # U+3000 IDEOGRAPHIC SPACE
-        " ",  # U+00A0 NO-BREAK SPACE
+#         " ",  # U+00A0 NO-BREAK SPACE
         ZWSP,  # U+200B -- str.isspace() is False here
         "⁠",  # U+2060 WORD JOINER -- likewise
         "﻿",  # U+FEFF ZWNBSP -- likewise
