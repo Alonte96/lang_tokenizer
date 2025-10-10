@@ -563,7 +563,7 @@ def test_real_report_per_language_scores_differ():
     stdout = _invoke("report", "--stats", str(REAL_STATS)).stdout
     bodies = ["\n".join(str(r) for r in t[2:]) for t in parse_tables(stdout)]
     assert len(set(bodies)) == len(bodies)
-
+# 
 # Updated
 
 # Updated
