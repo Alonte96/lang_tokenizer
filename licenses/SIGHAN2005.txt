@@ -22,6 +22,7 @@ original providers before use.
 
 By passing --accept-license sighan you acknowledge these terms.
 # 
+# improved
 # Updated
 
 # Enhanced
