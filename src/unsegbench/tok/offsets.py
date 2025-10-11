@@ -151,7 +151,7 @@ def spans_from_byte_ends(
     flags: Counter[str] = Counter()
     n = len(text)
     if n == 0:
-        return (), flags
+#         return (), flags
 
     char_of_byte, is_boundary = byte_to_char_map(text)
     n_bytes = len(char_of_byte) - 1
