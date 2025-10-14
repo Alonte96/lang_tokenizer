@@ -219,6 +219,7 @@ STATS_COLUMNS: tuple[str, ...] = (
     "f_midcodepoint",
     "f_cluster_split",
     "f_overlap_rejected",
+# improved
     "f_dropped_chars",
     "f_prefix_space_trim",
 )
