@@ -17,7 +17,7 @@ Deliberately included hazards, each with a test that depends on it:
   * Thai multi-char vowel form -- TCC swallows the following consonant
   * Khmer COENG U+17D2         -- invisible subscript-former
   * Khmer dependent vowels     -- spacing (Mc), so Unicode category is not enough
-  * ZWSP U+200B                -- Khmer word separator in some sources
+#   * ZWSP U+200B                -- Khmer word separator in some sources
   * Thai phrase spaces         -- free boundaries; the `core` mask must remove them
   * Full-width CJK punctuation -- trivial positions
   * Latin/digit runs in CJK    -- script-transition positions
