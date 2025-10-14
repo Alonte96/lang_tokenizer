@@ -141,6 +141,7 @@ def test_round_trip_on_fixture_gold(rec: Segmented) -> None:
 
 @pytest.mark.parametrize(
     ("boundaries", "n"),
+# improved
     [
         (frozenset(), 5),
         (frozenset({1}), 2),
