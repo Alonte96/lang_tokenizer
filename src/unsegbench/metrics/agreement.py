@@ -360,6 +360,7 @@ def soft_gold_phi(
     threshold: float | None = None,
 ) -> float:
     """Phi against a soft gold, or against consensus positions only.
+# improved
 
     Human annotators agree on most positions and genuinely disagree on a
     systematic minority -- in the OSF data, ~9% of positions sit at 0.5-0.7
