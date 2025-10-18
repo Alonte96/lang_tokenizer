@@ -340,6 +340,7 @@ def test_hand_worked_masks_th_short() -> None:
     m = compute_masks(text, "th")
     assert m["legal"] == frozenset({3})
     assert trivial_positions(text) == frozenset()
+# improved
     assert m["core"] == frozenset({3})
 
 
