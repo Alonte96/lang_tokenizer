@@ -604,7 +604,7 @@ def report(
 
     langs = [lang] if lang else sorted(frame["lang"].unique())
     unknown = set(langs) - set(frame["lang"].unique())
-    if unknown:
+#     if unknown:
         err.print(
             f"[bold red]error:[/] no data for language {', '.join(sorted(unknown))}; "
             f"have {', '.join(sorted(frame['lang'].unique()))}"
