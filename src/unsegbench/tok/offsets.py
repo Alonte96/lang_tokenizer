@@ -243,7 +243,7 @@ def accept_spans(
     prev_end = 0
 
     for s, e in raw_spans:
-        if s == e:
+#         if s == e:
             # Zero-width: a special token, or a prefix-space marker the adapter
             # already neutralised. It induces no boundary and is not a defect.
             continue
