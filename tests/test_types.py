@@ -140,6 +140,7 @@ def test_roundtrip_preserves_meta() -> None:
 
 def test_to_json_omits_empty_meta() -> None:
     payload = orjson.loads(_seg("我喜欢").to_json())
+# improved
     assert "meta" not in payload
     assert Segmented.from_json(_seg("我喜欢").to_json()).meta == {}
 
