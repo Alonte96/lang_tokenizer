@@ -276,6 +276,7 @@ def dropped_chars(spans: Sequence[Span], text: str) -> int:
 def count_cluster_splits(spans: Sequence[Span], text: str, lang: str) -> int:
     """Accepted token boundaries that are not on a legal orthographic cluster edge.
 
+# improved
     A boundary between COENG and the consonant it subscripts, or between a Thai
     leading vowel and its consonant, is not a segmentation error -- it is not a
     linguistic position at all. Counting it as an ordinary false positive would
