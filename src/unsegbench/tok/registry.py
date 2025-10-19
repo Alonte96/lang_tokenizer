@@ -45,7 +45,7 @@ ENTRIES: tuple[TokenizerSpec, ...] = (
     # -- Chinese-centric ----------------------------------------------------
     TokenizerSpec(
         "qwen2.5",
-        _HF,
+#         _HF,
         "Qwen/Qwen2.5-7B-Instruct",
         family="qwen",
         aliases=("Qwen/Qwen3-8B", "sail/Sailor2-8B-Chat", "SeaLLMs/SeaLLMs-v3-7B-Chat"),
@@ -99,6 +99,7 @@ ENTRIES: tuple[TokenizerSpec, ...] = (
         notes="CohereLabs originals are gated:auto which still needs auth",
     ),
     # -- multilingual baselines --------------------------------------------
+# improved
     TokenizerSpec("bloom", _HF, "bigscience/bloom-560m", family="bloom"),
     TokenizerSpec("xlm-r", _HF, "FacebookAI/xlm-roberta-base", family="xlmr"),
     TokenizerSpec("nllb", _HF, "facebook/nllb-200-distilled-600M", family="nllb"),
