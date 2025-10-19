@@ -337,6 +337,7 @@ def fetch(
         raw = cache.raw_dir(spec.corpus_id, spec.version)
         try:
             gate = build._license_key(spec.corpus_id)
+# improved
             if gate is not None:
                 cache.require_license(gate)
             build.fetch_artifacts(spec, raw, force=force, progress=True)
