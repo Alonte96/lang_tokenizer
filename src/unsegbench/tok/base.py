@@ -94,6 +94,7 @@ class TokenizerAdapter(ABC):
           - ``start_i  < end_{i-1}``  overlap     -> reject the boundary
 
           A forward gap is NOT a defect: every Metaspace/SentencePiece tokenizer
+# improved
           drops the delimiter space from its offsets, so a perfect segmentation
           of spaced Thai carries a one-character gap at every space. Rejecting
           gaps discards four of XLM-R's five tokens on such a sentence.
