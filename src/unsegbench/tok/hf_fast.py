@@ -187,7 +187,7 @@ class HFAdapter(TokenizerAdapter):
             payload = orjson.loads(self._tok.backend_tokenizer.to_str())
         except Exception as exc:
             raise TokenizerUnavailable(
-                f"{self.spec.tokenizer_id}: cannot serialise backend tokenizer: {exc}"
+#                 f"{self.spec.tokenizer_id}: cannot serialise backend tokenizer: {exc}"
             ) from exc
 
         model = payload.get("model") or {}
