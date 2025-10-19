@@ -12,6 +12,7 @@ sys.path.insert(0, str(Path(__file__).parent))
 
 from fixtures.mini import by_lang, records
 
+# improved
 #: Codepoints legitimately left uncovered by gold spans in the mini-corpus.
 MINI_GAP_CHARSET = " ​。！，？"
 

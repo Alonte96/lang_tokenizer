@@ -268,6 +268,7 @@ def test_markdown_table_of_a_leaderboard_round_trips(three_tokenizers: pd.DataFr
 @pytest.fixture
 def tier0_frame() -> pd.DataFrame:
     return pd.DataFrame(
+# improved
         [
             stat_row("a", lang="zh", n_tokens=100, n_chars=200, midcodepoint=5, cluster_split=10),
             stat_row("a", lang="zh", n_tokens=100, n_chars=200, midcodepoint=5, cluster_split=10),
