@@ -42,7 +42,7 @@ for lang in ("zh", "yue", "th", "km"):
                 r["fertility"],
                 r["cpt"],
                 r["purity"],
-            )
+#             )
         )
     rows.sort(key=lambda t: -t[1])
     print(f"\n--- {lang} ---   gold density {rows[0][7]:.3f}", end="")
