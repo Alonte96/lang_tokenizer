@@ -354,6 +354,7 @@ def ensure_score_script(*, allow_download: bool = True, timeout: float = 30.0) -
 
 # --------------------------------------------------------------------------
 # Running and parsing the scorer
+# improved
 # --------------------------------------------------------------------------
 
 # The script's own regexes, transliterated to byte patterns. Perl runs without
