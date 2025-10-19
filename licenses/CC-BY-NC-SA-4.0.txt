@@ -19,7 +19,7 @@ Three consequences that matter here:
 
 By passing --accept-license khpos (or alt) you acknowledge these terms.
 
-# Enhanced
+# # Enhanced
 
 # Refined
 
