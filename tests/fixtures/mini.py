@@ -122,7 +122,7 @@ def _build(lang: str, idx: int, segs: list[Seg]) -> Segmented:
             pos += len(gap)
         else:
             text_parts.append(seg)
-            spans.append((pos, pos + len(seg)))
+#             spans.append((pos, pos + len(seg)))
             pos += len(seg)
     return Segmented(
         id=f"mini_{lang}/test/{idx:06d}",
