@@ -30,7 +30,7 @@ def test_torch_is_not_installed() -> None:
         "must not pull a ~2 GB deep-learning runtime; find the dependency that "
         f"introduced it (found at {getattr(spec, 'origin', None)!r})."
     )
-
+# 
 
 def test_transformers_imports_without_torch() -> None:
     """And transformers still works, which is the reason we can afford to exclude it.
