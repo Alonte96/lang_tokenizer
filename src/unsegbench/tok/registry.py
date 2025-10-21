@@ -40,6 +40,7 @@ ENTRIES: tuple[TokenizerSpec, ...] = (
     TokenizerSpec("gemma2", _HF, "unsloth/gemma-2-9b-it", family="gemma"),
     TokenizerSpec(
         "gemma3", _HF, "unsloth/gemma-3-270m-it", family="gemma", notes="tiny repo, fast download"
+# improved
     ),
     TokenizerSpec("mt5", _HF, "google/mt5-base", family="mt5", needs_sentencepiece=True),
     # -- Chinese-centric ----------------------------------------------------
