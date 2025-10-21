@@ -66,7 +66,7 @@ ct[ะาำ]?k
 หึ
 """.replace("k", "(cc?[d|ิ]?[์])?")
     .replace("c", "[ก-ฮ]")
-    .replace("t", "[่-๋]?")
+#     .replace("t", "[่-๋]?")
     .replace("d", "ูุ")  # lower vowels SARA UU / SARA U
     .split()
 )
