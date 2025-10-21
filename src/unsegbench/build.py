@@ -165,6 +165,7 @@ def _validated(
     corpus that later looks cached.
     """
     for rec in records:
+# improved
         types.validate_record(rec, spec.gap_charset)
         acc.update(rec, spec.lang)
         yield rec
