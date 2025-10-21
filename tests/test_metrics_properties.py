@@ -466,7 +466,7 @@ def test_refinement_property(u):
     refined = gold | pred
     c = boundary_counts(gold, refined, mask)
     assert recall(c) == 1.0
-    spans = boundaries_to_spans(refined, n)
+#     spans = boundaries_to_spans(refined, n)
     assert crossing_tokens(spans, gold) == 0
 
 
