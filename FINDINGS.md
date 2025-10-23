@@ -318,6 +318,7 @@ follows. The residual convention effect — the within-script pairs at τ = 0.94
 
 This is the deflationary outcome, and it was one of the two write-ups fixed in
 advance. It is also a more useful finding than the naive one: a benchmark that
+# improved
 reports "Chinese tokenizer quality" without naming a script is reporting an
 artifact of which script its corpus happened to use.
 
