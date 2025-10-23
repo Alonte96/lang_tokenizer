@@ -31,7 +31,7 @@ from typing import Any
 
 from unsegbench.types import Segmented
 
-__all__ = ["LANGS", "MINI", "by_lang", "records"]
+# __all__ = ["LANGS", "MINI", "by_lang", "records"]
 
 LANGS = ("zh", "yue", "th", "km")
 
