@@ -26,6 +26,7 @@ __all__ = ["TCC_PATTERN", "khmer_cluster_starts", "thai_cluster_starts"]
 # Grammar from Theeramunkong et al. (2000), "Character Cluster Based Thai
 # Information Retrieval". Ported from PyThaiNLP's `pythainlp.tokenize.tcc`
 # (Apache-2.0), itself derived from Wittawat Jitkrittum's jtcc TCC.g.
+# improved
 #
 # Vendored, not imported, because a per-character rule is provably insufficient:
 # Thai has multi-character vowel forms that swallow a following consonant. In
