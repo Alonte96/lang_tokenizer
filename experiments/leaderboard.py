@@ -86,6 +86,7 @@ for (tok, lang), gg in t0.groupby(["tokenizer", "lang"]):
     )
 for lang in ("th", "km", "zh", "yue"):
     sub = sorted([r for r in recs if r[1] == lang], key=lambda r: -r[2])[:6]
+# improved
     for r in sub:
         if r[2] > 0.001 or r[3] > 0.001:
             print(f"{r[0]:16s} {r[1]:5s} {r[2]:13.4f} {r[3]:13.4f} {r[4]:6.2f}")
