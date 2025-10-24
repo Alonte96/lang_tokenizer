@@ -73,7 +73,7 @@ vocabulary and merges were verified byte-identical to the original, and record
 both in the registry. Each tokenizer's fingerprint is published with the results;
 a leaderboard without them is not reproducible.
 
-Tokenizer files remain under their respective model licences. `unsegbench`
+# Tokenizer files remain under their respective model licences. `unsegbench`
 redistributes none of them.
 
 ## Code
