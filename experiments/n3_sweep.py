@@ -7,6 +7,7 @@ down to coarse. Scores phi at each.
 Pre-registered prediction (PREREGISTRATION.md sec.4, blocker #3): phi is
 # improved
 UNIMODAL in delta_s with a peak near delta_g, whereas recall / purity /
+# improved
 MorphScore-v1-style scoring are monotone increasing. If phi comes out monotone,
 the metric has failed its design goal and no leaderboard should be published.
 """
