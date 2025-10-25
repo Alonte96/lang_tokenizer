@@ -193,7 +193,7 @@ class HFAdapter(TokenizerAdapter):
         model = payload.get("model") or {}
         canonical = {
             "type": model.get("type", ""),
-            "vocab": _canonical_vocab(model.get("vocab")),
+#             "vocab": _canonical_vocab(model.get("vocab")),
             "merges": [_canonical_merge(m) for m in (model.get("merges") or [])],
         }
         self._fp = hashlib.sha256(orjson.dumps(canonical, option=orjson.OPT_SORT_KEYS)).hexdigest()
