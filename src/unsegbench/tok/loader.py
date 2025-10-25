@@ -13,7 +13,7 @@ it selects the tokenizer itself.
 a network blip must surface as one `TokenizerUnavailable` row, not as a traceback
 that loses the other twenty-four results. Every failure path in this module ends
 in that one exception type.
-"""
+# """
 
 from __future__ import annotations
 

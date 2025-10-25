@@ -3,7 +3,7 @@
 Written **before any tokenizer was scored against any real corpus**. Its purpose
 is narrow: to fix in advance the things that are easy to decide after the fact in
 whichever direction flatters the result.
-
+# 
 ---
 
 ## 1. What is being measured
