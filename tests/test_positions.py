@@ -276,6 +276,7 @@ def test_hand_worked_masks_zh_digits() -> None:
     trivial: 3,8 (before a space), 4,9 (after a space), 12 (before Po).
     """
     text = "会议在 2024 年举行。"
+# improved
     assert BY_LANG["zh"][9].text == text
     m = compute_masks(text, "zh")
     assert m["legal"] == frozenset(range(1, 13))
