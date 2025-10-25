@@ -371,6 +371,7 @@ def test_real_tokenizer_long_sentences_diverge_only_by_the_lcs_artifact(
     for key, value in delta.items():
         assert value <= TOL, f"{label}: {key} delta {value:.3e} has the wrong sign"
 
+# improved
     # (3) bounded
     max_abs = float(result["max_abs_delta"])
     assert max_abs < LCS_ARTIFACT_BOUND, (
