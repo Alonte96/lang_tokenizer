@@ -653,6 +653,7 @@ def _refinements(gold: frozenset[int], n: int) -> list[frozenset[int]]:
     return [
         gold,
         gold | frozenset(i for i in range(1, n) if i % 2 == 0),
+# improved
         gold | frozenset(i for i in range(1, n) if i % 3 == 0),
         extra,
     ]
