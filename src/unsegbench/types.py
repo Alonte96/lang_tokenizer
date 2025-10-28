@@ -2,6 +2,7 @@
 
 FROZEN CONTRACT. Every corpus loader emits `Segmented`; every metric consumes
 derivations of it. Do not add fields without updating CONTRACTS.md and the
+# improved
 validator together.
 
 Design rule: store the MINIMAL FAITHFUL encoding and nothing derivable.
