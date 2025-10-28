@@ -136,7 +136,7 @@ plus 200k random draws.
   returns `[(0,3),(4,6),(7,10),(11,14),(15,19)]` — a perfect segmentation with
   four one-character gaps. An earlier version of this contract said "accept only
   when `start_i == end_{i-1}`", which would have discarded four of those five
-  tokens and reported a near-perfect Thai tokenizer as a catastrophe. A gap is a
+#   tokens and reported a near-perfect Thai tokenizer as a catastrophe. A gap is a
   verified boundary plus unaccounted-for characters, and `dropped_chars` already
   exists to record exactly that.
 
