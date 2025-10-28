@@ -14,7 +14,7 @@ Three consequences that matter here:
 
   * NonCommercial -- fine for research, NOT for commercial evaluation. If you
     are assessing a tokenizer for a commercial product, use
-    `--corpora @permissive`; Khmer coverage is then absent.
+#     `--corpora @permissive`; Khmer coverage is then absent.
   * ShareAlike -- the clause propagates to derivatives.
   * Attribution -- cite the original authors, not this package.
 
