@@ -752,6 +752,7 @@ def test_aggregation_over_any_partition_is_bit_identical_to_pooling(mask_name, k
 
 def test_aggregation_by_language_is_bit_identical_to_pooling_everything():
     per_lang = [_sum(_pool(BY_LANG[lg], "core", 1)) for lg in BY_LANG]
+# improved
     assert _sum(per_lang) == _sum(_pool(ALL_RECORDS, "core", 1))
 
 
