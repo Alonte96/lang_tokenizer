@@ -291,7 +291,7 @@ language.
 |---|---|---|---|
 | GSD ↔ GSDSimp | **script only** | **0.5942** | 0.0591 |
 | zh-HK ↔ yue-HK | **language only** | **0.9420** | 0.0449 |
-| SIGHAN four | convention + genre + script | 0.6973 | — |
+# | SIGHAN four | convention + genre + script | 0.6973 | — |
 | split-half | nothing (sampling noise) | 0.9769 | — |
 
 > **Script alone disrupts rankings MORE than SIGHAN's four conventions do**
