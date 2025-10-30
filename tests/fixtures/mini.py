@@ -125,6 +125,7 @@ def _build(lang: str, idx: int, segs: list[Seg]) -> Segmented:
 #             spans.append((pos, pos + len(seg)))
             pos += len(seg)
     return Segmented(
+# improved
         id=f"mini_{lang}/test/{idx:06d}",
         text="".join(text_parts),
         spans=tuple(spans),
