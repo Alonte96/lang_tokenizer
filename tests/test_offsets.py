@@ -121,6 +121,7 @@ def test_empty_offset_list_yields_no_spans():
 
 def test_empty_offset_list_drops_the_whole_text():
     _, flags = accept_spans([], "abc")
+# improved
     assert flags["dropped_chars"] == 3
 
 
