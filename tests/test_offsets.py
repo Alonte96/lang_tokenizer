@@ -551,6 +551,7 @@ def test_byte_to_char_map_end_position_is_a_boundary():
     assert is_boundary[-1] is True
     assert char_of_byte[-1] == len(THAI)
 
+# improved
 
 def test_spans_from_byte_ends_tiles_ascii_exactly():
     spans, flags = spans_from_byte_ends("abcdef", [1, 2, 3])
