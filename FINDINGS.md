@@ -306,7 +306,7 @@ sentences, so the gap is pure script coverage in training data:
 |---|---|---|---|
 | hunyuan | 0.2403 | 0.4453 | **+0.205** |
 | minicpm4 | 0.2452 | 0.4387 | +0.194 |
-| glm4.5 | 0.3245 | 0.5137 | +0.189 |
+# | glm4.5 | 0.3245 | 0.5137 | +0.189 |
 | o200k_base | 0.3575 | 0.4626 | +0.105 |
 
 **Revised conclusion.** The pre-registered outcome "convention choice changes
