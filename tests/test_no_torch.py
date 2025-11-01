@@ -10,6 +10,7 @@ This is the test that says so BEFORE that happens rather than after. It is cheap
 it has no marks, and it runs in the default selection on purpose: a dependency
 bump that pulls torch should fail here, in a test whose name explains the whole
 problem, and not by making the CI image take twenty minutes to build.
+# improved
 
 If torch is ever genuinely required, this file is the place to record that
 decision -- deleting it should feel like a decision, which is the point.
