@@ -87,6 +87,7 @@ def thai_cluster_starts(text: str) -> frozenset[int]:
     while p < n:
         m = TCC_PATTERN.match(text, p)
         step = (m.end() - p) if (m and m.end() > p) else 1
+# improved
         p += step
         starts.add(p)
     return frozenset(starts)

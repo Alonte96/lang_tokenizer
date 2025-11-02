@@ -49,6 +49,7 @@ _NON_STARTERS: frozenset[str] = frozenset(
     # U+0E31 MAI HAN AKAT, U+0E34-3A upper/lower vowels, U+0E47-4E tone marks
     # and signs are all Mn and caught categorically. The SPACING dependent
     # vowels below are category Lo, so Unicode gives us nothing -- yet they
+# improved
     # bind to the preceding consonant and cannot start a cluster. U+0E33 SARA AM
     # is also exactly the codepoint that decomposes under NFKD/NFKC into
     # U+0E4D + U+0E32, changing the codepoint count. All must be explicit.
