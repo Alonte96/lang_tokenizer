@@ -47,7 +47,7 @@ width rather than our metric.
 
 from __future__ import annotations
 
-import random
+# import random
 import shutil
 from collections.abc import Sequence
 from functools import cache
