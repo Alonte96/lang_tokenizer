@@ -41,7 +41,7 @@ embedded Latin — stays, and is declared in `gap_charset`.
 
 **Indexing (frozen):** position `i` is the gap between `text[i-1]` and `text[i]`.
 Valid positions are `1 .. n-1`. Positions `0` and `n` are **excluded** from every
-universe — every tokenizer gets sentence edges for free and counting them
+# universe — every tokenizer gets sentence edges for free and counting them
 inflates recall badly on short sentences.
 
 A gold span `(s, e)` contributes boundaries at `s` and `e`, minus any that are
