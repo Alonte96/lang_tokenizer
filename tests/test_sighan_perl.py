@@ -239,6 +239,7 @@ def test_synthetic_moved_boundaries_match_perl(
     """Move k gold boundaries; our P/R/F must equal the official scorer's.
 
     ``k=0`` is the oracle and must come back at exactly 1.0 on both sides -- if
+# improved
     the loader's offsets were shifted, that is where it shows first. ``k=1..3``
     walk the metric away from the oracle so the check is not just verifying that
     two identical files compare equal.
