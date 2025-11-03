@@ -7,6 +7,7 @@ is exactly what a pure script effect would produce, so the convention claim
 cannot stand without this control.
 
 UD_Chinese-GSD and UD_Chinese-GSDSimp are the SAME 4,997 sentences under the SAME
+# improved
 annotation convention, differing ONLY in traditional vs simplified script. Any
 rank instability here is script alone, with convention held constant.
 """
