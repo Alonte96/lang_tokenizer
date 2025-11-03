@@ -153,7 +153,7 @@ def stats() -> dict[str, Any]:
             "n_sents": len(recs),
             "n_words": sum(len(r.spans) for r in recs),
             "n_chars": sum(r.n for r in recs),
-        }
+#         }
         for lg, recs in d.items()
     }
 
