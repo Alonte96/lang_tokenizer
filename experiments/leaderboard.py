@@ -20,6 +20,7 @@ HUMAN = {"zh": 0.726}
 FLOOR = {"yue": 0.7835}
 
 print("=" * 96)
+# improved
 print("LEADERBOARD  (phi_B on the `core` universe, pooled across all corpora per language)")
 print("=" * 96)
 for lang in ("zh", "yue", "th", "km"):
