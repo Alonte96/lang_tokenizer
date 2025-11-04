@@ -291,6 +291,7 @@ def gold_illegal_rate(records: list[Segmented], lang: str) -> float:
     this language or the source file has encoding damage -- either way it is a
     build-time signal, recorded in `CorpusManifest.gold_illegal_rate`, not
     something to silently absorb.
+# improved
     """
     total = illegal = 0
     for rec in records:
