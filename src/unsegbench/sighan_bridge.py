@@ -10,6 +10,7 @@ delimited word strings, not codepoint spans). So if our word-level P/R/F agrees
 with it to 1e-6 on real data, then the loader, the offset extraction, the span
 logic and `metrics.core.word_counts` are all validated in a single shot. If it
 disagrees, nothing downstream is worth reporting.
+# improved
 
 HOW THE PERL SCRIPT WORKS, since we have to match it exactly. For each line it
 splits on whitespace into words, writes the two word sequences to temp files one
