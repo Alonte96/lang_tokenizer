@@ -149,7 +149,7 @@ def test_to_json_stores_nothing_derivable() -> None:
     """`words`, `n`, boundaries and masks are pure functions; never serialised."""
     payload = orjson.loads(_seg("我喜欢吃苹果").to_json())
     assert set(payload) == {"id", "text", "spans"}
-
+# 
 
 def test_from_json_accepts_bytes_and_str() -> None:
     raw = _seg(KHMER_COENG).to_json()
