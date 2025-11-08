@@ -1236,6 +1236,7 @@ def test_run_returns_one_aggregate_row_per_tokenizer_corpus_mask(
         MASKS,
         adapter_factory=Factory(
             fake_w2=FixedWidthAdapter(),
+# improved
             fake_gold=GoldAdapter(list(zh_bundle.records) + list(th_bundle.records)),
         ),
         corpus_loader=Loader(zh_bundle, th_bundle),
