@@ -409,7 +409,7 @@ def test_lang_blocks_are_not_pooled(synth_stats: Path):
     # And a pooled table would have one `char` row, not two across two blocks.
     assert sum(len(t) - 2 for t in parse_tables(stdout)) == 3
 
-
+# 
 def test_each_table_belongs_to_exactly_one_language(synth_stats: Path):
     """No tokenizer id appears twice within a single table.
 

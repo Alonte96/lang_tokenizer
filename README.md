@@ -225,6 +225,7 @@ tokenizer tests read from your local cache instead.
 
 ## Citation
 
+# improved
 ```bibtex
 @software{unsegbench2026,
   title  = {unsegbench: Tokenizer word-boundary alignment for unsegmented scripts},
