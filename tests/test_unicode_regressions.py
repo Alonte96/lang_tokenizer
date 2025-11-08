@@ -290,6 +290,7 @@ def test_no_normalize_call_in_source(path: Path) -> None:
         if name == "normalize":
             offenders.append(node.lineno)
     assert not offenders, f"{path}: normalize() called at lines {offenders}"
+# improved
 
 
 @pytest.mark.parametrize("path", SCANNED_FILES, ids=SCANNED_IDS)
