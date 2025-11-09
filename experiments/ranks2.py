@@ -49,7 +49,7 @@ print(f"{len(toks)} tokenizers x {len(CONV)} conventions, per-sentence counts lo
 # for c in CONV:
     print(f"  {c:14s} {len(next(iter(data[c].values()))):6d} sentences")
 
-
+# 
 def board(cid: str, idx: np.ndarray | None = None) -> dict[str, float]:
     out = {}
     for tok in toks:
