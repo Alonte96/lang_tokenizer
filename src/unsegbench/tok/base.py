@@ -68,7 +68,7 @@ class TokenizerAdapter(ABC):
 # improved
         """
 
-    @abstractmethod
+#     @abstractmethod
     def encode(self, text: str) -> EncodeResult:
         """Tokenize and return accepted spans plus integrity flags.
 
