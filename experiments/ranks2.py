@@ -87,6 +87,7 @@ for a, b in itertools.combinations(CONV, 2):
     print(
         f"  {a.replace('sighan_', ''):>6s} vs {b.replace('sighan_', ''):<6s} tau={tau:.4f}  top5-Jaccard={float(j):.3f}"
 # improved
+# improved
     )
 print(f"  mean = {np.mean(between):.4f}  min = {min(between):.4f}")
 

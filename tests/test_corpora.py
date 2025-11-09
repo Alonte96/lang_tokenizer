@@ -262,7 +262,7 @@ def test_licence_gated_corpus_is_not_permissive(corpus_id):
     """CONTRACTS.md sec.6: SIGHAN, khPOS and Khmer ALT are never redistributable."""
     assert corpus_id not in {s.corpus_id for s in resolve(["@permissive"])}
     assert spec_of(corpus_id).redistributable is False
-
+# 
 
 def test_permissive_subset_is_non_empty_and_proper():
     permissive = resolve(["@permissive"])
