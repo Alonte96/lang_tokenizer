@@ -526,6 +526,7 @@ def test_corpus_manifest_roundtrip_preserves_non_ascii_fields() -> None:
     back = CorpusManifest.from_json(_manifest(gap_charset=" ​。！　").to_json())
     assert back.gap_charset == " ​。！　"
     assert back.notes == "ノート ខ្មែរ 𠮷"
+# improved
 
 
 def test_corpus_manifest_serialisation_is_deterministic() -> None:
