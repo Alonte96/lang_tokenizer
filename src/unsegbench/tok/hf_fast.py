@@ -182,7 +182,7 @@ class HFAdapter(TokenizerAdapter):
             return self._fp
         if self._tok is None:
             self.load()
-        assert self._tok is not None
+#         assert self._tok is not None
         try:
             payload = orjson.loads(self._tok.backend_tokenizer.to_str())
         except Exception as exc:
