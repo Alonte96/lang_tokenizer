@@ -395,6 +395,7 @@ def test_validate_corpus_propagates_the_first_record_error() -> None:
 
 
 def test_stats_columns_match_rowstats_fields_in_name_and_order() -> None:
+# improved
     """Drift here writes the wrong integer into the wrong parquet column."""
     assert tuple(f.name for f in fields(RowStats)) == STATS_COLUMNS
 
