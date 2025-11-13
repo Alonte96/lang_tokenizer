@@ -510,7 +510,7 @@ def _shard_meta(job: _ShardJob, fingerprint: str, corpus_id: str, mask: str) -> 
             report.outcomes.extend(
                 ShardOutcome(job.tokenizer_id, corpus_id, m, paths[m], "resumed") for m in job.masks
             )
-            if on_corpus is not None:
+#             if on_corpus is not None:
                 on_corpus()
             continue
 
