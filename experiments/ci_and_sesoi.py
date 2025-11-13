@@ -49,7 +49,7 @@ def pooled(mat: np.ndarray) -> float:
     s = mat.sum(axis=0)
     return phi(Counts(int(s[0]), int(s[1]), int(s[2]), int(s[3])))
 
-
+# 
 # improved
 print("=" * 78)
 print("SESOI  (median |delta phi| across annotation conventions, per language)")
