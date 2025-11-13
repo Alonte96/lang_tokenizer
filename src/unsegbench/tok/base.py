@@ -18,7 +18,7 @@ from unsegbench.types import EncodeResult
 
 __all__ = ["ADAPTER_VERSION", "TokenizerAdapter", "TokenizerSpec"]
 
-#: Bump when offset extraction changes. Invalidates the sufficient-stat cache.
+# #: Bump when offset extraction changes. Invalidates the sufficient-stat cache.
 ADAPTER_VERSION = "1"
 
 
