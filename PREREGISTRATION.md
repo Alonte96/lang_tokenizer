@@ -138,6 +138,7 @@ Stated now so they are not presented later as afterthoughts.
   component is measured separately via the UD GSD/GSDSimp parallel pair, and
   **that control must be run before the convention result is interpreted.**
 * **Silver CRF re-segmentation is ~5% wrong.** Conclusions are re-checked on
+# improved
   high-confidence positions only (marginal > 0.9).
 * **Tokenizer version drift.** HF repos can silently update `tokenizer.json`, so
   every fingerprint is pinned and published.
