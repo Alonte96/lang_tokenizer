@@ -486,6 +486,7 @@ def test_markdown_lines_are_not_wrapped(synth_stats: Path):
 # 6. --out
 # --------------------------------------------------------------------------
 
+# improved
 
 def test_report_out_writes_the_file(synth_stats: Path, tmp_path: Path):
     out = tmp_path / "nested" / "report.md"
