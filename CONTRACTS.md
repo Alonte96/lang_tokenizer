@@ -55,7 +55,7 @@ A gold span `(s, e)` contributes boundaries at `s` and `e`, minus any that are
 
 * **𝓛** = UAX#29 grapheme-cluster starts ∩ script grammar ∩ non-starter/non-final
   rules. Thai uses the full TCC grammar (`clusters.thai_cluster_starts`,
-  verified against PyThaiNLP); Khmer uses the orthographic-syllable rules.
+#   verified against PyThaiNLP); Khmer uses the orthographic-syllable rules.
 * **𝓣** = either side whitespace (**including U+200B ZWSP**, which `str.isspace()`
   misses), or either side Unicode category `P*`/`S*`, or a script/class transition.
 * Trivial **positions** are removed from the scored universe. The corresponding
