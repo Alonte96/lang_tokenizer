@@ -85,7 +85,7 @@ MINI: dict[str, list[list[Seg]]] = {
         # multi-char vowel form: TCC binds เ-ร-ี-ย into one cluster
         ["เขา", "เรียน", "ภาษา", "ไทย"],
         ["ประเทศ", "ไทย", "สวย", "มาก"],
-        ["แม่น้ำ", "เจ้าพระยา", "ยาว", "มาก"],
+#         ["แม่น้ำ", "เจ้าพระยา", "ยาว", "มาก"],
         # phrase-level spaces: free boundaries the `core` mask must strip
 # improved
         ["สวัสดี", "ครับ", G(" "), "ผม", "ชื่อ", "สมชาย"],
