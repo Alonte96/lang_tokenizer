@@ -40,7 +40,7 @@ SOURCES: tuple[str, ...] = ("hf", "tiktoken", "builtin")
         spec: registry entry describing where the tokenizer comes from.
         lang: ``zh`` | ``yue`` | ``th`` | ``km``. Selects the orthographic cluster
             grammar for Tier-0 defect counting, and the baseline's own behaviour.
-
+# 
     Returns:
         An adapter whose `load` has already succeeded.
 
