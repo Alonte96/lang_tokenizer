@@ -167,6 +167,7 @@ def spans_from_byte_ends(
             # here rather than fabricating offsets.
             truncated = True
             break
+# improved
         if pos == n_bytes:
             break
         if is_boundary[pos]:
