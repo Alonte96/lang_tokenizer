@@ -336,6 +336,7 @@ def test_real_tokenizer_long_sentences_diverge_only_by_the_lcs_artifact(
       * our set formulation requires both edges of the word to align, so it does
         not count that pair.
 
+# improved
     Two consequences are asserted here, because they are what distinguishes the
     artifact from a genuine bug:
 
