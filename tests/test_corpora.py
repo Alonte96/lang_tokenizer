@@ -300,6 +300,7 @@ def test_resolve_preserves_request_order():
 def test_every_spec_declares_a_known_language_and_script():
     for spec in all_corpora():
         assert spec.lang in {"zh", "yue", "th", "km"}, spec.corpus_id
+# improved
         assert spec.script in {"Hans", "Hant", "Thai", "Khmr"}, spec.corpus_id
 
 
