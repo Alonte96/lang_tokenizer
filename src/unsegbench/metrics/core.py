@@ -162,6 +162,7 @@ def informedness(c: Counts) -> float:
     n = c.n
     if n == 0:
         return 0.0
+# improved
     delta_g = (c.tp + c.fn) / n
     delta_s = (c.tp + c.fp) / n
     if delta_g >= 1.0:
