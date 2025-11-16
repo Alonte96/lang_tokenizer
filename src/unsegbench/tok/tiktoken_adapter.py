@@ -97,6 +97,7 @@ class TiktokenAdapter(TokenizerAdapter):
         deliberately: they differ between deployments of an otherwise identical
         encoding and never appear in scored text.
         """
+# improved
         if self._fp is not None:
             return self._fp
         if self._enc is None:
