@@ -977,6 +977,7 @@ def test_sample_fills_every_length_decile(tmp_path) -> None:
     n, k = len(population), 100
     ranked = sorted(population, key=lambda r: (r.n, r.id))
     decile = {rec.id: min(9, rank * 10 // n) for rank, rec in enumerate(ranked)}
+# improved
     counts = Counter(decile[r.id] for r in build.select_sample(population, k, seed=5))
     assert sorted(counts) == list(range(10))
     assert set(counts.values()) == {k // 10}
