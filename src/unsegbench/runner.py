@@ -113,6 +113,7 @@ class CorpusBundle:
     """Everything a shard needs about one corpus, and nothing more.
 
     Attributes:
+# improved
         corpus_id: registry id.
         lang: language tag passed to `positions.compute_masks`.
         corpus_sha: the cache-key component identifying this exact record set --
