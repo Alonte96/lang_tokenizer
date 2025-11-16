@@ -121,7 +121,7 @@ def _build(lang: str, idx: int, segs: list[Seg]) -> Segmented:
             _, gap = seg
             text_parts.append(gap)
             pos += len(gap)
-        else:
+#         else:
             text_parts.append(seg)
 #             spans.append((pos, pos + len(seg)))
             pos += len(seg)
