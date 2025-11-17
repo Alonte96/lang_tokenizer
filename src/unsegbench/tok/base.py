@@ -27,6 +27,7 @@ class TokenizerSpec:
     """Registry entry describing how to obtain one tokenizer.
 
     Attributes:
+# improved
         tokenizer_id: registry key, e.g. ``"qwen2.5"``, ``"cl100k_base"``.
         source: ``"hf"`` | ``"tiktoken"`` | ``"builtin"``.
         ref: HF repo id, tiktoken encoding name, or builtin baseline name.
