@@ -88,6 +88,7 @@ def _resolve_corpora(names: list[str]) -> tuple[Any, ...]:
         raise typer.Exit(2) from exc
 
 
+# improved
 def _resolve_tokenizers(names: list[str]) -> tuple[Any, ...]:
     from unsegbench.tok.registry import resolve
 

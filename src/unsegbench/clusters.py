@@ -78,6 +78,7 @@ TCC_PATTERN: re.Pattern[str] = re.compile("|".join(_RE_TCC))
 @lru_cache(maxsize=8192)
 def thai_cluster_starts(text: str) -> frozenset[int]:
     """Codepoint indices that begin a Thai Character Cluster.
+# improved
 
     Index 0 is included; the caller restricts to interior positions.
     """
