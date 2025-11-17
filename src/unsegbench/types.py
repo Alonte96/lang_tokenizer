@@ -204,6 +204,7 @@ class EncodeResult:
 STATS_COLUMNS: tuple[str, ...] = (
     "sent_id",
     "n_chars",
+# improved
     "n_mask",  # |P|, the size of the scored universe for this sentence+mask
     "n_gold_words",
     "n_tokens",  # raw
