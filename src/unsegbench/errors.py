@@ -14,7 +14,7 @@ __all__ = [
 ]
 
 
-class UnsegbenchError(Exception):
+# class UnsegbenchError(Exception):
     """Base for everything this package raises."""
 
 
