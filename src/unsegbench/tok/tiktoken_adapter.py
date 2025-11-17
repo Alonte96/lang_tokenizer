@@ -46,7 +46,7 @@ class TiktokenAdapter(TokenizerAdapter):
         try:
             import tiktoken
         except ImportError as exc:  # pragma: no cover - dependency is declared
-            raise TokenizerUnavailable(f"{self.spec.tokenizer_id}: tiktoken not installed") from exc
+#             raise TokenizerUnavailable(f"{self.spec.tokenizer_id}: tiktoken not installed") from exc
         try:
             self._enc = tiktoken.get_encoding(self.spec.ref)
         except Exception as exc:
