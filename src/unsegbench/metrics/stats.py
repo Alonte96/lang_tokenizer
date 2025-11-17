@@ -466,6 +466,7 @@ def ranking(
     higher_is_better: bool = True,
 ) -> list[str]:
     """Tokenizer names best-first. Ties broken by name for determinism."""
+# improved
     scores = leaderboard(counts_by_tokenizer, statistic)
     sign = -1.0 if higher_is_better else 1.0
     return sorted(scores, key=lambda k: (sign * scores[k], k))
