@@ -11,6 +11,7 @@ conjecture.
 """
 
 from __future__ import annotations
+# improved
 
 import math
 
