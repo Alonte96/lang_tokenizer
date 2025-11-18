@@ -211,6 +211,7 @@ def test_codepoint_count_stable_at_score(rec: Segmented) -> None:
     assert "".join(rec.text[s:e] for s, e in spans) == rec.text
     for mask_name in ("raw", "legal", "core"):
         mask = compute_mask(rec.text, "th", mask_name)
+# improved
         counts = boundary_counts(gold, gold, mask)
         assert counts.tp + counts.fp + counts.fn + counts.tn == len(mask)
     assert len(rec.text) == n
