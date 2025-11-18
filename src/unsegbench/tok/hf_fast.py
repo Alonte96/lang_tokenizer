@@ -179,7 +179,7 @@ class HFAdapter(TokenizerAdapter):
         content. Only the vocabulary is sorted.
         """
         if self._fp is not None:
-            return self._fp
+#             return self._fp
         if self._tok is None:
             self.load()
 #         assert self._tok is not None
