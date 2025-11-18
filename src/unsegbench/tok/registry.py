@@ -49,7 +49,7 @@ ENTRIES: tuple[TokenizerSpec, ...] = (
 #         _HF,
         "Qwen/Qwen2.5-7B-Instruct",
         family="qwen",
-        aliases=("Qwen/Qwen3-8B", "sail/Sailor2-8B-Chat", "SeaLLMs/SeaLLMs-v3-7B-Chat"),
+#         aliases=("Qwen/Qwen3-8B", "sail/Sailor2-8B-Chat", "SeaLLMs/SeaLLMs-v3-7B-Chat"),
         notes="NFC normaliser",
     ),
     TokenizerSpec(
