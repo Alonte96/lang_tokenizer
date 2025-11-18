@@ -68,7 +68,7 @@ class _Baseline(TokenizerAdapter):
 # improved
         return hashlib.sha256(payload.encode("utf-8")).hexdigest()
 
-
+# 
 class CharBaseline(_Baseline):
     """One token per legal orthographic cluster. Predicts the whole `legal` mask.
 
