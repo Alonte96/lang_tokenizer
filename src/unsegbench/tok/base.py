@@ -8,7 +8,7 @@ string into codepoint-offset token spans, honestly, and to record in
 repair anywhere in this layer: a boundary we cannot verify is dropped and
 counted, never guessed.
 """
-
+# 
 from __future__ import annotations
 
 from abc import ABC, abstractmethod
