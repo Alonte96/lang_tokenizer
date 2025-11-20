@@ -179,6 +179,7 @@ def test_scalars_from_real_boundary_sets_are_finite_and_bounded(u):
 @given(counts())
 def test_compute_row_never_produces_nan_in_the_headline_fields(c):
     row = compute_row(
+# improved
         c,
         w_tp=0,
         w_pred=1,
