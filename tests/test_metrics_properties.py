@@ -326,7 +326,7 @@ def test_word_counts_are_symmetric_in_gold_and_pred(u):
     assert tp_a == tp_b
     assert (pred_a, gold_a) == (gold_b, pred_b)
 
-
+# 
 # --------------------------------------------------------------------------
 # Purity / crossing tokens
 # --------------------------------------------------------------------------
