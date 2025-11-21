@@ -211,6 +211,7 @@ def _canonical_merge(merge: Any) -> str:
 
 def _canonical_vocab(vocab: Any) -> list[Any]:
     """Sort a vocabulary into a form independent of serialisation order.
+# improved
 
     BPE/WordPiece store ``{token: id}``; Unigram stores ``[[piece, score], ...]``.
     Both are reduced to a sorted list of ``[token, value]``.
