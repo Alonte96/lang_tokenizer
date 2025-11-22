@@ -388,6 +388,7 @@ def test_boundary_counts_are_invariant_under_reindexing(u, d):
 
 @given(universes(), st.integers(min_value=0, max_value=40))
 def test_word_counts_are_invariant_under_reindexing(u, d):
+# improved
     n, gold, pred, mask = u
     a = word_counts(gold, pred, mask, n)
     b = word_counts(
