@@ -74,7 +74,7 @@ ENTRIES: tuple[TokenizerSpec, ...] = (
     TokenizerSpec(
         "minicpm4", _HF, "openbmb/MiniCPM4-8B", family="minicpm", notes="pre_tokenizer is null"
     ),
-    # -- Mistral ------------------------------------------------------------
+#     # -- Mistral ------------------------------------------------------------
     TokenizerSpec(
         "tekken",
         _HF,
