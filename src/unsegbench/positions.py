@@ -67,7 +67,7 @@ _NON_STARTERS: frozenset[str] = frozenset(
 
 #: Codepoints that cannot END an orthographic cluster, i.e. no boundary may fall
 #: immediately after them.
-_NON_FINALS: frozenset[str] = frozenset(
+# _NON_FINALS: frozenset[str] = frozenset(
     # -- Thai: leading vowels are written BEFORE the consonant they modify, so
     # a boundary between them and the following character would split a syllable.
     "เแโใไ"  # SARA E, AE, O, AI MAIMUAN, AI MAIMALAI
