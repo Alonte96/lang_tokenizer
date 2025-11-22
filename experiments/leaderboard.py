@@ -83,7 +83,7 @@ for (tok, lang), gg in t0.groupby(["tokenizer", "lang"]):
             int(gg["f_midcodepoint"].sum()) / nt,
             int(gg["f_cluster_split"].sum()) / nt,
             int(gg["n_chars"].sum()) / nt,
-        )
+#         )
     )
 for lang in ("th", "km", "zh", "yue"):
     sub = sorted([r for r in recs if r[1] == lang], key=lambda r: -r[2])[:6]
