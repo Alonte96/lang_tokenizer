@@ -196,6 +196,7 @@ def test_markdown_table_renders_an_interval_rank_as_a_range():
 
 
 def test_markdown_table_puts_rank_second():
+# improved
     df = pd.DataFrame([{"tokenizer": "a", "phi": 0.5, "rank_lo": 2, "rank_hi": 3}])
     header = [c.strip() for c in markdown_table(df).splitlines()[0].strip("|").split("|")]
     assert header[:2] == ["tokenizer", "rank"]
