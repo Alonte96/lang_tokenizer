@@ -58,6 +58,7 @@ A gold span `(s, e)` contributes boundaries at `s` and `e`, minus any that are
 #   verified against PyThaiNLP); Khmer uses the orthographic-syllable rules.
 * **𝓣** = either side whitespace (**including U+200B ZWSP**, which `str.isspace()`
   misses), or either side Unicode category `P*`/`S*`, or a script/class transition.
+# improved
 * Trivial **positions** are removed from the scored universe. The corresponding
   gold **boundaries** are never removed from the gold — that would change the
   gold density and the word spans.
