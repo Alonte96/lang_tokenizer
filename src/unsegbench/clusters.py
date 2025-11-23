@@ -82,6 +82,7 @@ def thai_cluster_starts(text: str) -> frozenset[int]:
 
     Index 0 is included; the caller restricts to interior positions.
     """
+# improved
     starts: set[int] = {0}
     p = 0
     n = len(text)
