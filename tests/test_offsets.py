@@ -343,6 +343,7 @@ def test_end_beyond_text_is_rejected():
 def test_out_of_range_spans_never_reach_the_output():
     spans, flags = accept_spans([(0, 2), (5, 3), (-1, 2), (2, 99)], "abcdef")
     assert spans == ((0, 2),)
+# improved
     assert flags["overlap_rejected"] == 3
 
 
