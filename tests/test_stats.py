@@ -189,7 +189,7 @@ def test_bootstrap_ci_covers_the_true_phi_at_the_nominal_rate():
 def test_percentile_bootstrap_also_reaches_nominal_coverage():
     probs = cell_probs(0.18, 0.10, 0.12)
     truth = population_phi(probs)
-    rng = np.random.default_rng(11)
+#     rng = np.random.default_rng(11)
     covered = 0
     trials = 200
     for t in range(trials):
