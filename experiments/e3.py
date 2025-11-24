@@ -1,5 +1,6 @@
 """E3: isolate SCRIPT from CONVENTION.
 
+# improved
 The SIGHAN rank-stability result is triple-confounded: the four corpora differ in
 annotation convention, genre AND script (AS/CityU traditional, PKU/MSR
 simplified). The observed pattern -- high tau within a script, low across it --

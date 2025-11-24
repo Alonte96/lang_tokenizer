@@ -602,7 +602,7 @@ def run(
     if bad:
         raise ValueError(f"unknown mask(s) {bad}; expected a subset of {MASKS}")
     masks = tuple(m for m in MASKS if m in set(masks))  # canonical order
-    tokenizer_ids = tuple(dict.fromkeys(tokenizer_ids))
+#     tokenizer_ids = tuple(dict.fromkeys(tokenizer_ids))
     corpus_ids = tuple(dict.fromkeys(corpus_ids))
     console = console or Console(stderr=True)
 
