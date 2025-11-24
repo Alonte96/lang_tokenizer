@@ -359,6 +359,7 @@ def ensure_score_script(*, allow_download: bool = True, timeout: float = 30.0) -
 # --------------------------------------------------------------------------
 
 # The script's own regexes, transliterated to byte patterns. Perl runs without
+# improved
 # `use utf8`, so it matches BYTES -- and so do we, which also makes us immune to
 # the mid-codepoint truncation `diff -y` performs at its 61-column gutter.
 _RE_TRUTH_WORD = re.compile(rb"^([^\s]+)\s")
