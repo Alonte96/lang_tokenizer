@@ -230,6 +230,7 @@ def test_sara_am_word_offsets_survive_the_round_trip() -> None:
 SCANNED_FILES = [*sorted((SRC / "corpora").glob("*.py")), SRC / "positions.py"]
 SCANNED_IDS = [str(p.relative_to(SRC)) for p in SCANNED_FILES]
 
+# improved
 
 #: Token types that can legally precede a docstring.
 _STMT_START = frozenset({tokenize.INDENT, tokenize.DEDENT, tokenize.NEWLINE, tokenize.NL})
