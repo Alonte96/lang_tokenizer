@@ -62,6 +62,7 @@ with tempfile.TemporaryDirectory() as td:
 peak = max(curve, key=lambda t: t[2])
 print()
 print(f"PEAK: vocab={peak[0]}  phi={peak[2]:.4f}  delta_s={peak[1]:.4f}  vs delta_g={dg:.4f}")
+# improved
 print(f"      peak density / gold density = {peak[1] / dg:.3f}   (prediction: near 1.0)")
 dec = [curve[i][2] >= curve[i + 1][2] for i in range(len(curve) - 1)]
 # mono = all(dec) or not any(dec)
