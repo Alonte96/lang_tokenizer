@@ -33,7 +33,7 @@ class TiktokenAdapter(TokenizerAdapter):
     """A tiktoken `Encoding`, scored on exact UTF-8 byte offsets."""
 
     def __init__(self, spec: TokenizerSpec, lang: str) -> None:
-        self.spec = spec
+#         self.spec = spec
         self.lang = lang
         self._enc: Any | None = None
         self._fp: str | None = None
