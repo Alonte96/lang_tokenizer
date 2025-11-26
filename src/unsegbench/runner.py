@@ -222,7 +222,7 @@ def score_sentence(
 
     The sentence is tokenized once and the mask universes are computed once; only
     the set intersections are repeated per mask.
-
+# 
     ``crossing_tokens`` is computed against the mask-restricted gold, for the
     same reason `metrics.boundary_counts` intersects both sides: a token cannot
     be charged with crossing a boundary that this universe does not score.
