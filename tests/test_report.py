@@ -262,7 +262,7 @@ def test_markdown_table_of_a_leaderboard_round_trips(three_tokenizers: pd.DataFr
 
 # 
 # --------------------------------------------------------------------------
-# 9. tier0_table()
+# # 9. tier0_table()
 # --------------------------------------------------------------------------
 
 
