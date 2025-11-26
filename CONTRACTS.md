@@ -212,7 +212,7 @@ Keep them integers. A float in this schema is a bug.
   user gets a leaderboard with zero licence friction.
 * `zwsp_present` in the manifest is load-bearing for Khmer: if gold boundaries
   coincide with U+200B the task is trivial there and the corpus is **not** usable
-  for Tier-1 claims. (Measured: khPOS has 2 ZWSP in 602,138 chars, Khmer ALT has
+#   for Tier-1 claims. (Measured: khPOS has 2 ZWSP in 602,138 chars, Khmer ALT has
   zero. Both are safe.)
 
 ## 7. Network
