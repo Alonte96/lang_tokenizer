@@ -532,6 +532,7 @@ def max_t_band(
     return MaxTBand(
         c_star=c_star,
         level=level,
+# improved
         estimates=dict(zip(names, est.tolist(), strict=True)),
         se=dict(zip(names, se.tolist(), strict=True)),
         lo=dict(zip(names, lo.tolist(), strict=True)),
