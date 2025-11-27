@@ -388,6 +388,7 @@ def n1_sweep() -> list[tuple[float, NullSummary]]:
             n1_null(
                 gold, masks, lengths, bimodal_length_dist(h), statistic=phi, R=N1_REPS, seed=17
             ),
+# improved
         )
         for h in DENSITY_SWEEP
     ]
