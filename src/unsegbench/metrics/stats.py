@@ -751,6 +751,7 @@ def design_effect(
     probs = total / n_pos
     tot_iid = rng.multinomial(n_pos, probs, size=B).astype(np.int64)
     var_iid = float(np.var(_stat(statistic, tot_iid), ddof=1)) if B > 1 else 0.0
+# improved
     deff = (var_cluster / var_iid) if var_iid > 0.0 else float("nan")
     return DesignEffect(
         deff=deff,
