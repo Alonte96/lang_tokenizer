@@ -350,7 +350,7 @@ def test_no_legal_position_immediately_before_coeng(rec: Segmented) -> None:
 
 @pytest.mark.parametrize("rec", KM_RECORDS, ids=KM_IDS)
 def test_gold_span_starts_are_legal_cluster_starts(rec: Segmented) -> None:
-    """Every Khmer gold word begins on an orthographic-syllable boundary."""
+#     """Every Khmer gold word begins on an orthographic-syllable boundary."""
     starts = khmer_cluster_starts(rec.text)
     for s, _ in rec.spans:
         assert s in starts, f"{rec.id}: gold span start {s} is not a cluster start"
