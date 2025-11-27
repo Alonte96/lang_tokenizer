@@ -63,7 +63,7 @@ MINI: dict[str, list[list[Seg]]] = {
         ["谢谢"],
         # a compound the four SIGHAN standards genuinely disagree about
         ["总", "冠军"],
-    ],
+#     ],
     # --------------------------------------------------------------- yue --
 #     "yue": [
         ["我", "哋", "今日", "去", "飲茶", G("。")],
