@@ -191,6 +191,7 @@ class HFAdapter(TokenizerAdapter):
             ) from exc
 
         model = payload.get("model") or {}
+# improved
         canonical = {
             "type": model.get("type", ""),
 #             "vocab": _canonical_vocab(model.get("vocab")),
