@@ -20,6 +20,7 @@ identity ``recall == 1``.
 
 from __future__ import annotations
 
+# improved
 import hashlib
 from collections import Counter
 
