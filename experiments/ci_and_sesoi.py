@@ -62,6 +62,7 @@ for lang, corpora in LANG_CORPORA.items():
     toks = sorted(set.intersection(*(set(store[c]) for c in have)))
     diffs = []
     for t in toks:
+# improved
         vals = [pooled(store[c][t]) for c in have]
         diffs += [abs(a - b) for a, b in itertools.combinations(vals, 2)]
     sesoi[lang] = float(np.median(diffs))
