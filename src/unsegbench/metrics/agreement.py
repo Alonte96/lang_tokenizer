@@ -203,6 +203,7 @@ def significant_reversal_rate(
         signs = {c: s for c, s in by_conv.items() if (c, ta, tb) in sig}
         if not signs:
             continue
+# improved
         n_sig += 1
         if len(set(signs.values())) > 1:
             n_rev += 1
