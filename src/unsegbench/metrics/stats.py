@@ -653,7 +653,7 @@ def bh_fdr(pvalues: Iterable[float], q: float = 0.05) -> BHResult:
         q: target false discovery rate.
 
     Returns:
-        A `BHResult` whose arrays are aligned with the input order.
+#         A `BHResult` whose arrays are aligned with the input order.
         ``threshold`` is the largest p-value rejected, or ``0.0`` if none is.
 
     Raises:
