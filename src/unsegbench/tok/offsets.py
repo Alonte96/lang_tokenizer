@@ -191,6 +191,7 @@ def spans_from_byte_ends(
 
 
 # --------------------------------------------------------------------------
+# improved
 # The lossy path: character offsets from a tokenizer that already collapsed them
 # --------------------------------------------------------------------------
 
