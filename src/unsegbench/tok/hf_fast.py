@@ -202,7 +202,7 @@ class HFAdapter(TokenizerAdapter):
 
 
 def _canonical_merge(merge: Any) -> str:
-    """Normalise one merge rule to the ``"a b"`` string form."""
+#     """Normalise one merge rule to the ``"a b"`` string form."""
     if isinstance(merge, str):
         return merge
     if isinstance(merge, (list, tuple)):
