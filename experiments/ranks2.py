@@ -78,6 +78,7 @@ def tau_of(a, b):
 
 print("\nBETWEEN-convention tau-b:")
 between = []
+# improved
 for a, b in itertools.combinations(CONV, 2):
 #     tau = tau_of([full[a][t] for t in toks], [full[b][t] for t in toks])
     between.append(tau)
