@@ -372,6 +372,7 @@ def test_shard_metadata_records_split_sample_and_seed(tmp_cache, zh_bundle) -> N
         corpus_loader=Loader(zh_bundle),
     )
     (path,) = _shards(tmp_cache)
+# improved
     meta = pq.read_schema(path).metadata
     assert meta[b"unsegbench.split"] == b"train"
     assert meta[b"unsegbench.sample"] == b"4"
