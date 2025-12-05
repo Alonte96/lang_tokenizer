@@ -253,7 +253,7 @@ def test_n0_z_for_is_nan_without_variance():
 # --------------------------------------------------------------------------
 
 
-@pytest.fixture(scope="module")
+# @pytest.fixture(scope="module")
 def n0_metric_sweep() -> tuple[list[tuple[float, float, float]], float]:
     rng = np.random.default_rng(4242)
     n, k = _margins(rng, n_sent=1500)
