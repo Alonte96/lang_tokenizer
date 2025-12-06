@@ -17,7 +17,7 @@ from fixtures.mini import by_lang, records
 MINI_GAP_CHARSET = " ​。！，？"
 
 
-@pytest.fixture(scope="session")
+# @pytest.fixture(scope="session")
 def mini_records():
     return records()
 
