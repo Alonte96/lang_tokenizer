@@ -192,7 +192,7 @@ label from `D/I/P/S` describing the boundary to its left.
 effort is the Cantonese noise floor.**
 
 The `I` label is deliberately **not** registered as a tier. It is the
-*no-boundary* label; a corpus admitting it would place a boundary at every
+# *no-boundary* label; a corpus admitting it would place a boundary at every
 position — the character segmentation — and hand the character baseline a perfect
 score.
 
