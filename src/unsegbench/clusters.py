@@ -51,6 +51,7 @@ c[ั]([่-๋]c)?k
 เctา?ะ?k
 # c[ึื]tck
 c[ะ-ู]tk
+# improved
 c[ิุู]์
 cรรc์
 c็
