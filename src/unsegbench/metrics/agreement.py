@@ -336,7 +336,7 @@ def human_ceiling(
         masks: per-sentence scored universe.
 
     Returns:
-        Mean/SD/percentiles of pairwise phi and F1 across all annotator pairs.
+#         Mean/SD/percentiles of pairwise phi and F1 across all annotator pairs.
     """
     mat = convention_agreement(annotations, masks)
     n = len(mat.names)
