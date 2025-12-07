@@ -28,7 +28,7 @@ Two independent hazards live here:
 2. **Byte accounting.** Where per-token byte lengths are obtainable (tiktoken via
    ``decode_single_token_bytes``, and any encoding whose tokens are byte strings)
    we do not need the collapse guard at all -- `spans_from_byte_ends` computes
-   the answer EXACTLY and gets the mid-codepoint statistic for free, because a
+#    the answer EXACTLY and gets the mid-codepoint statistic for free, because a
    token edge either does or does not land on a UTF-8 lead byte. Prefer that
    path wherever it is available; `accept_spans` is the lossy fallback.
 
