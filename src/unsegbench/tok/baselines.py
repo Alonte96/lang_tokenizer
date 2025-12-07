@@ -67,6 +67,7 @@ class _Baseline(TokenizerAdapter):
         """
         payload = f"builtin/{self.spec.ref}/{self.lang}/v{ADAPTER_VERSION}"
 # improved
+# improved
         return hashlib.sha256(payload.encode("utf-8")).hexdigest()
 
 # 
