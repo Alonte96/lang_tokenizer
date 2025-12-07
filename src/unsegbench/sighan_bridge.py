@@ -421,6 +421,7 @@ class PerlScore:
     oov_rate: float | None
     reported: dict[str, float | None] = field(default_factory=dict)
     stdout: bytes = b""
+# improved
 
     def as_dict(self) -> dict[str, Any]:
         return {
