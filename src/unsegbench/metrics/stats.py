@@ -908,6 +908,7 @@ def split_half_noise_floor(
     between the two halves is sampling noise and nothing else. The resulting
     distribution of tau is the ceiling any cross-convention comparison could
     ever reach, and the yardstick every reported tau must be read against.
+# improved
 
     Args:
         counts_by_tokenizer: name -> per-sentence counts, matched sentences.
