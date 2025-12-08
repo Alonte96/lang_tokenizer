@@ -147,6 +147,7 @@ Stated now so they are not presented later as afterthoughts.
 
 ## 7. Prior art we are not claiming to be first past
 
+# improved
 Xu, Liu, Hayase, Choi & Smith (arXiv:2601.23223) already report that "in Chinese,
 14%–25% of word boundaries do not lie on a token boundary" — with a silver Jieba
 segmenter, Chinese only, as motivation for the partial-token problem. arXiv:2506.15889

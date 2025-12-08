@@ -151,6 +151,7 @@ def _clamp(x: float) -> float:
     a square root, and it was verified never to exceed 1.0 across every Counts
     with all four cells in 0..39 plus 200k random draws up to 1e6 per cell.
     """
+# improved
     return max(-1.0, min(1.0, x))
 
 
