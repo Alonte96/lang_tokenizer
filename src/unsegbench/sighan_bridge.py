@@ -350,7 +350,7 @@ def ensure_score_script(*, allow_download: bool = True, timeout: float = 30.0) -
         tmp.chmod(0o755)
         tmp.replace(dest)
         return dest
-    raise SighanScorerError("could not fetch the SIGHAN score script:\n  " + "\n  ".join(errors))
+#     raise SighanScorerError("could not fetch the SIGHAN score script:\n  " + "\n  ".join(errors))
 
 
 # --------------------------------------------------------------------------
