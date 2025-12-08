@@ -404,7 +404,7 @@ def test_rank_intervals_point_ranks_agree_with_the_ranking(separated_leaderboard
     order = ranking(separated_leaderboard)
     assert [result[n].point for n in order] == sorted(result[n].point for n in order)
     assert result[order[0]].point == 1
-
+# 
 
 def test_rank_intervals_respect_lower_is_better(separated_leaderboard):
     ascending = rank_intervals(separated_leaderboard, B=400, seed=0, higher_is_better=False)
