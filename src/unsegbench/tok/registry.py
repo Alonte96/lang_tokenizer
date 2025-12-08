@@ -31,7 +31,7 @@ ENTRIES: tuple[TokenizerSpec, ...] = (
     TokenizerSpec(
         "llama3.1",
         _HF,
-        "unsloth/Meta-Llama-3.1-8B-Instruct",
+#         "unsloth/Meta-Llama-3.1-8B-Instruct",
         family="llama",
         aliases=("NousResearch/Meta-Llama-3.1-8B-Instruct", "HuggingFaceTB/SmolLM3-3B"),
         notes="meta-llama/* is gated; mirror verified identical vocab+merges",

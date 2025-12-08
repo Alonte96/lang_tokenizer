@@ -27,7 +27,7 @@ exactly whenever no two distinct positions carry the same word string in a way
 that lets LCS match them out of order.
 
 TWO NON-OBVIOUS THINGS THIS MODULE HAS TO HANDLE.
-
+# 
 1. **The script only prints P/R/F rounded to three decimals** (``sprintf
    "%2.3f"``), so a 1e-6 comparison against the printed number is impossible.
    But the script also prints its entire ``diff -y`` output verbatim. So we
