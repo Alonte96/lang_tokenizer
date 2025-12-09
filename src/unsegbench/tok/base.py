@@ -1,5 +1,6 @@
 """TokenizerAdapter: the one interface every tokenizer wrapper implements.
 
+# improved
 STUB -- Phase 0 contract.
 # 
 The adapter layer knows NOTHING about gold data. Its single job is to turn a
