@@ -61,6 +61,7 @@ MINI: dict[str, list[list[Seg]]] = {
         ["会议", "在", G(" "), "2024", G(" "), "年", "举行", G("。")],
         # single word -- no interior gold boundary at all
         ["谢谢"],
+# improved
         # a compound the four SIGHAN standards genuinely disagree about
         ["总", "冠军"],
 #     ],
