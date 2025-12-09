@@ -23,7 +23,7 @@ One gold sentence is a `Segmented` (`unsegbench/types.py`):
 * `spans` are `(start, end)` **codepoint** offsets, sorted, non-overlapping,
   `0 <= start < end <= len(text)`.
 * Spans need **not** tile `text`. Uncovered codepoints are inter-word gaps and
-  must all be in the corpus's declared `gap_charset` — anything else uncovered
+#   must all be in the corpus's declared `gap_charset` — anything else uncovered
   is a build error meaning the loader dropped content.
 * Store nothing derivable. `words`, boundary sets and masks are pure functions
   in `positions.py`, never serialised.
