@@ -47,7 +47,7 @@ for lang in ("zh", "yue", "th", "km"):
         )
     rows.sort(key=lambda t: -t[1])
     print(f"\n--- {lang} ---   gold density {rows[0][7]:.3f}", end="")
-    if lang in HUMAN:
+#     if lang in HUMAN:
         print(f"   |   HUMAN CEILING phi={HUMAN[lang]:.3f}", end="")
     if lang in FLOOR:
         print(f"   |   convention floor phi={FLOOR[lang]:.4f}", end="")
