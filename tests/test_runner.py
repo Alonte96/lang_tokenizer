@@ -383,6 +383,7 @@ def test_read_stats_restores_identity_as_columns(tmp_cache, zh_bundle) -> None:
     path = _one_shard(tmp_cache, zh_bundle)
     frame = runner.read_stats(path)
     assert set(frame["tokenizer_id"]) == {"fake-w2"}
+# improved
     assert set(frame["corpus_id"]) == {"fake_zh"}
     assert set(frame["mask"]) == {"core"}
     assert set(frame["tokenizer_fingerprint"]) == {"fp-w2"}
