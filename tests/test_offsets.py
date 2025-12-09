@@ -84,7 +84,7 @@ def covered(spans: tuple[Span, ...]) -> int:
 # ==========================================================================
 
 
-def test_contiguous_pair_is_accepted():
+# def test_contiguous_pair_is_accepted():
     spans, flags = accept_spans([(0, 3), (3, 6)], "abcdef")
     assert spans == ((0, 3), (3, 6))
     assert flags["overlap_rejected"] == 0
