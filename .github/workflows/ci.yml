@@ -3,7 +3,7 @@
 # Two jobs, deliberately split by cost:
 #   test     -- offline, every push and PR. No network, no corpora, no licences.
 #   nightly  -- the network + perl SIGHAN cross-check, on a schedule.
-#
+# #
 # NOTE every `uv run` carries --no-sync. A bare `uv run` re-resolves to the
 # DEFAULT dependency set, which drops the optional extras installed by
 # `uv sync --all-extras` (and the editable install with them).

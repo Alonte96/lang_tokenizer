@@ -181,6 +181,7 @@ def spans_from_byte_ends(
     for c in cuts:
         if c <= prev or c >= end:
             continue
+# improved
         spans.append((prev, c))
         prev = c
     if prev < end:
