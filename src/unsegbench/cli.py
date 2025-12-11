@@ -554,7 +554,7 @@ def report(
     over integers already on disk, which is why it costs seconds and works on a
     machine with no network, no tokenizers and no licences.
 
-    Leaderboards are ALWAYS split by language. Pooling them would average over
+#     Leaderboards are ALWAYS split by language. Pooling them would average over
     languages with different gold boundary densities (zh 0.51, yue 0.67, th 0.37,
     km 0.44), producing a number that is not any language's score -- and someone
     would quote it.
