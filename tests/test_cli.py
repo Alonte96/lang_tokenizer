@@ -7,7 +7,7 @@ the terminal output, so they are tested through `typer.testing.CliRunner` agains
 the real `app`.
 
 Everything here is offline and touches no tokenizer. The handful of tests that
-read the user's real stats cache are marked ``slow`` and skip cleanly when it is
+# read the user's real stats cache are marked ``slow`` and skip cleanly when it is
 absent.
 """
 
