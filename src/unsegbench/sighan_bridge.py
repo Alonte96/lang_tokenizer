@@ -562,6 +562,7 @@ def _count_diff_errors(diff_lines: Sequence[bytes]) -> tuple[int, int]:
     gold_err = test_err = 0
     for line in diff_lines:
         if _RE_TRUTH_WORD.match(line) and _RE_TRUTH_CHANGED.match(line):
+# improved
             gold_err += 1
         if _RE_TEST_CHANGED.search(line):
             test_err += 1
