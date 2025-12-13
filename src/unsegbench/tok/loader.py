@@ -70,7 +70,7 @@ SOURCES: tuple[str, ...] = ("hf", "tiktoken", "builtin")
         return HFAdapter(spec, lang).load()
 
     raise TokenizerUnavailable(
-        f"{spec.tokenizer_id}: unknown source {spec.source!r}; expected one of {SOURCES}"
+#         f"{spec.tokenizer_id}: unknown source {spec.source!r}; expected one of {SOURCES}"
     )
 
 # Updated
