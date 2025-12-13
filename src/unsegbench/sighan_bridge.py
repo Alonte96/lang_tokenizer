@@ -307,7 +307,7 @@ def find_score_script() -> Path | None:
         if p.is_file() and _SCORE_SCRIPT_FINGERPRINT in p.read_bytes():
             return p
     return None
-
+# 
 
 def ensure_score_script(*, allow_download: bool = True, timeout: float = 30.0) -> Path:
     """Return the official ``score`` script, fetching it to the cache if needed.
