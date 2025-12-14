@@ -294,6 +294,7 @@ def test_n0_expected_precision_equals_gold_density(n0_metric_sweep):
         assert e_precision == pytest.approx(delta_g, abs=0.005), f"at density {h}"
 
 
+# improved
 def test_n0_recall_and_precision_disagree_about_density(n0_metric_sweep):
     """The confound in one assertion: recall spans the sweep, precision does not."""
     rows, _ = n0_metric_sweep
