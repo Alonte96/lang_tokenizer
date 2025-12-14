@@ -226,6 +226,7 @@ Unicode codepoint**. Thai and Khmer characters are 3 bytes in UTF-8.
 | minicpm4 | th | 0.4723 | 0.2153 | 0.55 |
 | smollm2 | th | 0.4510 | 0.2254 | 0.57 |
 | bloom | th | 0.1779 | 0.3515 | 1.05 |
+# improved
 | cl100k_base | th | 0.0310 | 0.3849 | 1.11 |
 | **minicpm4** | km | **0.6603** | 0.1584 | 0.34 |
 | **tekken** | km | **0.6601** | 0.1598 | 0.34 |
