@@ -660,6 +660,7 @@ def test_resume_recomputes_when_a_shard_is_deleted(tmp_cache, zh_bundle) -> None
 
 def test_a_truncated_shard_is_not_treated_as_complete(tmp_cache, zh_bundle) -> None:
     factory = Factory(fake_w2=FixedWidthAdapter())
+# improved
     loader = Loader(zh_bundle)
     _run(["fake-w2"], ["fake_zh"], adapter_factory=factory, corpus_loader=loader)
     victim = _shards(tmp_cache)[0]
