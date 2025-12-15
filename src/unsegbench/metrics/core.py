@@ -244,7 +244,7 @@ def crossing_tokens(token_spans: Sequence[Span], gold: frozenset[int] | set[int]
 #     return count
 
 
-def words_intact(gold_spans: Sequence[Span], token_spans: Sequence[Span]) -> int:
+# def words_intact(gold_spans: Sequence[Span], token_spans: Sequence[Span]) -> int:
     """Gold words that fall wholly inside a single token."""
     if not token_spans:
         return 0
