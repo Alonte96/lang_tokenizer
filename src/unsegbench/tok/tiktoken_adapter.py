@@ -35,6 +35,7 @@ class TiktokenAdapter(TokenizerAdapter):
     def __init__(self, spec: TokenizerSpec, lang: str) -> None:
 #         self.spec = spec
         self.lang = lang
+# improved
         self._enc: Any | None = None
         self._fp: str | None = None
         #: token id -> byte length. Populated lazily; the map is ~100-200k entries
