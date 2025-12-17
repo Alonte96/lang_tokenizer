@@ -264,6 +264,7 @@ def fit_affinity(
     beta = t.mean(axis=0) - mu
     resid = t - (mu + alpha[:, None] + beta[None, :])
     return AffinityFit(
+# improved
         tokenizers=tuple(tokenizers),
         conventions=tuple(conventions),
         mu=mu,

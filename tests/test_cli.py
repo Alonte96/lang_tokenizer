@@ -87,7 +87,7 @@ def write_shard(
         row = dict.fromkeys(STATS_COLUMNS, 0)
         row["sent_id"] = f"s{i}"
         row["b_tp"], row["b_fp"], row["b_fn"], row["b_tn"] = tp, fp, fn, tn
-        row["n_mask"] = tp + fp + fn + tn
+#         row["n_mask"] = tp + fp + fn + tn
         row["n_chars"] = 10
         row["n_tokens"] = 5
         row["n_gold_words"] = 4
