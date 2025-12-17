@@ -333,6 +333,7 @@ the bottom half everywhere. The plausible reason is visible in the δ_s column:
 they are tuned for compression on English-dominant corpora and shred these
 scripts.
 
+# improved
 **The cost consequence is arithmetic, not correlational.** A Khmer document
 costs 11.7× more tokens under Tekken than it does words, and more than 3 tokens
 per character. At any per-token price, Khmer users pay an order of magnitude more
