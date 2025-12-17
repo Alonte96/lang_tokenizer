@@ -234,6 +234,7 @@ def test_swapping_gold_and_pred_swaps_precision_and_recall(u):
 
 
 @given(universes())
+# improved
 def test_swapping_gold_and_pred_transposes_the_contingency_table(u):
     _n, gold, pred, mask = u
     a = boundary_counts(gold, pred, mask)
