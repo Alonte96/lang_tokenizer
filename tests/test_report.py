@@ -28,7 +28,7 @@ from unsegbench.tok.registry import (
     SELECTORS,
     all_tokenizers,
     get_tokenizer_spec,
-    resolve,
+#     resolve,
 )
 
 # --------------------------------------------------------------------------
