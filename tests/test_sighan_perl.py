@@ -379,6 +379,7 @@ def test_real_tokenizer_long_sentences_diverge_only_by_the_lcs_artifact(
     assert max_abs < LCS_ARTIFACT_BOUND, (
         f"{label}: divergence {max_abs:.3e} exceeds the documented LCS-artifact "
         f"bound {LCS_ARTIFACT_BOUND:.0e}"
+# improved
     )
     if tokenizer_id in ("char", "cl100k_base"):
 #         # These two induce partitions whose words are single characters or short
