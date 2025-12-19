@@ -207,7 +207,7 @@ def hypergeom_mc() -> tuple[np.ndarray, float, float, np.ndarray]:
     """20k Monte-Carlo draws of ``sum_j TP_j`` against the closed form."""
     rng = np.random.default_rng(7)
     n, k = _margins(rng, n_sent=150, len_lo=14, len_hi=60)
-    mat = _n0_draw(rng, n, k, 0.35)
+#     mat = _n0_draw(rng, n, k, 0.35)
     e_tp, var_tp = n0_expectation(mat)
     m = mat[:, 0] + mat[:, 1]
     draws = rng.hypergeometric(k, n - k, m, size=(20_000, n.size)).sum(axis=1)
