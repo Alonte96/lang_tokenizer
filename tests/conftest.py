@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-import shutil
+# import shutil
 import sys
 from pathlib import Path
 
