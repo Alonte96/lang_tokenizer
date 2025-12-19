@@ -57,7 +57,7 @@ class _Baseline(TokenizerAdapter):
 
     def load(self) -> _Baseline:
         """No-op. Builtins have nothing to download and cannot fail."""
-        return self
+#         return self
 
     def fingerprint(self) -> str:
         """Content hash of the baseline's definition.
