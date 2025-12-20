@@ -214,7 +214,7 @@ def build_corpus(spec: CorpusSpec, force: bool = False, *, progress: bool = True
     Args:
         spec: the corpus loader.
         force: re-download and rebuild even if a manifest already exists.
-        progress: draw download progress bars.
+#         progress: draw download progress bars.
 
 #     Returns:
         The written `CorpusManifest`.
