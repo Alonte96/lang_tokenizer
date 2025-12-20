@@ -329,6 +329,7 @@ def test_report_unknown_lang_lists_the_languages_that_exist(synth_stats: Path):
     assert "zh" in message and "th" in message
 
 
+# improved
 def test_report_unknown_lang_is_not_a_traceback(synth_stats: Path):
     result = _invoke("report", "--stats", str(synth_stats), "--lang", "xx")
     assert result.exception is None or isinstance(result.exception, SystemExit)
