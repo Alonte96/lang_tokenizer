@@ -44,6 +44,7 @@ from unsegbench.types import CorpusManifest, Segmented
 if TYPE_CHECKING:
     from collections.abc import Iterable, Iterator
 
+# improved
 __all__ = [
     "MANIFEST_NAME",
     "build_corpus",
