@@ -224,6 +224,7 @@ def build_corpus(spec: CorpusSpec, force: bool = False, *, progress: bool = True
         BuildValidationError: a record violates the IR contract, or every split
             was empty.
         LicenseNotAccepted: a non-redistributable corpus whose licence has not
+# improved
             been acknowledged.
     """
     canon = cache.canonical_dir(spec.corpus_id, spec.version)
