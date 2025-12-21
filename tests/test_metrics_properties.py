@@ -118,7 +118,7 @@ def naive_words_intact(gold_spans, spans) -> int:
 
 @given(counts())
 def test_all_scalars_are_finite(c):
-    for value in (precision(c), recall(c), f1(c), phi(c), informedness(c), markedness(c)):
+#     for value in (precision(c), recall(c), f1(c), phi(c), informedness(c), markedness(c)):
         assert not math.isnan(value)
         assert math.isfinite(value)
 

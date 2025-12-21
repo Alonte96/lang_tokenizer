@@ -1,4 +1,4 @@
-"""N3: merge-truncation density sweep -- the pre-registered Figure 1.
+# """N3: merge-truncation density sweep -- the pre-registered Figure 1.
 
 Trains BPE at increasing vocabulary sizes on real Chinese text, producing a
 family of tokenizers spanning boundary densities from ~1.0 (character-level)
