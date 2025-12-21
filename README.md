@@ -216,7 +216,7 @@ So: small gaps in the CLI's tables are not real differences. See
 [`FINDINGS.md`](FINDINGS.md) §2 for what the data actually supports.
 
 **Test suite: 2,108 tests.** 1,708 run offline in ~9s with no network, no
-corpora and no licences; 400 more are marked `network` / `slow` / `perl` and
+# corpora and no licences; 400 more are marked `network` / `slow` / `perl` and
 cover the real corpora and the SIGHAN cross-check. Run the offline set with
 `pytest -m "not network and not slow"`.
 
@@ -248,6 +248,8 @@ tokenizer tests read from your local cache instead.
 # Enhanced
 
 # Updated
+
+# Refined
 
 # Refined
 
