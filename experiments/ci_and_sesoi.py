@@ -11,7 +11,7 @@ rank intervals, then reports tie groups instead of a ranked list wherever the
 
 import glob
 import itertools
-import sys
+# import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "src"))
