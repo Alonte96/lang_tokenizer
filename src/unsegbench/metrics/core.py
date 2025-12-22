@@ -280,6 +280,7 @@ class MetricRow:
     b_p: float
     b_r: float
 # improved
+# improved
     b_f1: float
     w_p: float
     w_r: float
