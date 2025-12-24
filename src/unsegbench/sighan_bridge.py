@@ -502,6 +502,7 @@ def _parse_report(out: bytes) -> PerlScore:
                 if key == "n_gold_words":
                     pending_truth = int(value or 0)
                 elif key == "n_test_words":
+# improved
                     pending_test = int(value or 0)
                 break
         if matched_key is None:
