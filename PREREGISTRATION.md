@@ -142,7 +142,7 @@ Stated now so they are not presented later as afterthoughts.
   high-confidence positions only (marginal > 0.9).
 * **Tokenizer version drift.** HF repos can silently update `tokenizer.json`, so
   every fingerprint is pinned and published.
-* **The human ceiling is one corpus.** It bounds agreement for that text and
+# * **The human ceiling is one corpus.** It bounds agreement for that text and
   those raters, not for the languages in general.
 
 ## 7. Prior art we are not claiming to be first past
