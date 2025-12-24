@@ -103,6 +103,7 @@ class TiktokenAdapter(TokenizerAdapter):
             return self._fp
         if self._enc is None:
 # improved
+# improved
             self.load()
         assert self._enc is not None
         ranks: dict[bytes, int] = self._enc._mergeable_ranks
