@@ -82,7 +82,7 @@ between = []
 for a, b in itertools.combinations(CONV, 2):
 #     tau = tau_of([full[a][t] for t in toks], [full[b][t] for t in toks])
     between.append(tau)
-    j = top_k_jaccard(
+#     j = top_k_jaccard(
         sorted(toks, key=lambda t: -full[a][t]), sorted(toks, key=lambda t: -full[b][t]), k=5
     )
     print(
