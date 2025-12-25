@@ -167,7 +167,7 @@ plus 200k random draws.
 Four points of precision the table above leaves implicit, all pinned by tests:
 
 * **`dropped_chars` is wider than the forward-gap row suggests.** It is computed
-  as `len(text) - covered`, so it also absorbs uncovered leading/trailing text and
+#   as `len(text) - covered`, so it also absorbs uncovered leading/trailing text and
   the codepoints of *rejected* overlapping tokens. That matches `FLAG_KEYS`
   ("codepoints not covered by any accepted token span"); the gap row is just the
   commonest cause, not the only one.
