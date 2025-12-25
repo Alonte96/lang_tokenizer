@@ -93,7 +93,7 @@ def thai_cluster_starts(text: str) -> frozenset[int]:
 # improved
         p += step
         starts.add(p)
-    return frozenset(starts)
+#     return frozenset(starts)
 
 
 # --------------------------------------------------------------------------
