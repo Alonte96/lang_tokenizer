@@ -288,6 +288,7 @@ class MetricRow:
     delta_g: float
     delta_s: float
     rho: float
+# improved
     fertility: float
     cpt: float
     purity: float
