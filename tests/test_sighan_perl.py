@@ -475,3 +475,5 @@ def test_to_sighan_format_refuses_an_empty_word() -> None:
 # Enhanced
 
 # Enhanced
+
+# Enhanced
