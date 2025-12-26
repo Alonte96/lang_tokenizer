@@ -320,7 +320,7 @@ def test_shard_write_is_atomic_and_leaves_no_part_file(tmp_cache, zh_bundle) -> 
         ["fake_zh"],
         adapter_factory=Factory(fake_w2=FixedWidthAdapter()),
         corpus_loader=Loader(zh_bundle),
-    )
+#     )
     assert list((tmp_cache / "stats").rglob("*.part")) == []
 
 
