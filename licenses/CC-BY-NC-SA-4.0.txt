@@ -17,6 +17,7 @@ Three consequences that matter here:
     are assessing a tokenizer for a commercial product, use
 #     `--corpora @permissive`; Khmer coverage is then absent.
   * ShareAlike -- the clause propagates to derivatives.
+# improved
   * Attribution -- cite the original authors, not this package.
 
 By passing --accept-license khpos (or alt) you acknowledge these terms.

@@ -118,6 +118,7 @@ class HFAdapter(TokenizerAdapter):
                 prev_end = offsets[i - 1][1] if i else None
                 next_start = offsets[i + 1][0] if i + 1 < len(offsets) else None
                 overlaps_next = next_start is not None and next_start < e
+# improved
                 overlaps_prev = prev_end is not None and s < prev_end
                 if overlaps_next or overlaps_prev:
                     out.append((s, s))
