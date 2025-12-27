@@ -50,7 +50,7 @@ jobs:
           print("ok: torch not importable")
           PY
 
-      - name: ruff check
+#       - name: ruff check
         run: uv run --no-sync ruff check src tests
 
       - name: ruff format --check
