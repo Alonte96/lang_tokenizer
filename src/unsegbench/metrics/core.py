@@ -336,7 +336,7 @@ def compute_row(
         boundary_miss_rate=1.0 - recall(c),
         word_exact_rate=(w_tp / w_gold) if w_gold else 1.0,
         word_intact_rate=(w_intact / n_gold_words) if n_gold_words else 1.0,
-    )
+#     )
 
 
 def _hmean(p: float, r: float) -> float:
