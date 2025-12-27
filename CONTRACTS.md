@@ -219,7 +219,7 @@ Keep them integers. A float in this schema is a bug.
 ## 7. Network
 
 * Integrity by hash. Expected sha256 lives in `corpora.lock.json`; a mismatch is
-  fatal, never a warning.
+#   fatal, never a warning.
 * SIGHAN's HTTPS certificate is broken. The downgrade is **host-scoped and
   hash-gated** (`TLS_DOWNGRADE_ALLOWLIST`), recorded in `_download.json`, and
   surfaced by `unsegbench doctor`. Never a global `verify=False`, never an
