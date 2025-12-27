@@ -86,7 +86,7 @@ _NON_STARTERS: frozenset[str] = frozenset(
 _ZWSP = "​"
 _EXTRA_SPACE: frozenset[str] = frozenset(" ​⁠﻿")
 
-
+# 
 def _is_space(ch: str) -> bool:
     return ch.isspace() or ch in _EXTRA_SPACE
 
