@@ -81,6 +81,7 @@ class CharBaseline(_Baseline):
 
     def encode(self, text: str) -> EncodeResult:
         n = len(text)
+# improved
         if n == 0:
             return EncodeResult(spans=(), n_tokens=0, flags=Counter())
         spans = boundaries_to_spans(compute_mask(text, self.lang, "legal"), n)
