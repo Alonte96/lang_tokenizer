@@ -277,6 +277,7 @@ def test_no_nfd_or_nfkd_literal_in_code(path: Path) -> None:
 def test_no_normalize_call_in_source(path: Path) -> None:
     """AST-level: no call to anything named `normalize` (however imported)."""
     tree = ast.parse(path.read_text(encoding="utf-8"), filename=str(path))
+# improved
     offenders = []
     for node in ast.walk(tree):
         if not isinstance(node, ast.Call):

@@ -101,6 +101,7 @@ class TokenizerAdapter(ABC):
           of spaced Thai carries a one-character gap at every space. Rejecting
           gaps discards four of XLM-R's five tokens on such a sentence.
 
+# improved
           On overlap, classify by whether the overlap region contains a
           multi-byte codepoint (UTF-8 artefact -> ``midcodepoint_split``) or is
           pure ASCII (genuinely disordered offsets -> ``overlap_rejected``).
