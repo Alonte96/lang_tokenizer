@@ -33,6 +33,7 @@ is real but tiny (2 words in ~16k for xlm-r on PKU) and it never touches the wor
 TOTALS, only the intersection.
 
 Because of that, the synthetic check perturbs boundaries under an explicit
+# improved
 LCS-safety guard (`_lcs_safe`) rather than pretending the ambiguity does not
 exist: a perturbation that could be re-paired out of order is redrawn, and the
 handful of sentences where no safe draw exists are left unperturbed and counted.
