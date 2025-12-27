@@ -26,6 +26,7 @@ languages, at reduced convention coverage for Mandarin.
 
 These are free to obtain and standard in the research literature, but their terms
 do **not** permit redistribution. `unsegbench` therefore refuses to download them
+# improved
 until you acknowledge the terms once, and never vendors their bytes.
 
 | Corpus | Lang | Licence | Gate key | Source |
