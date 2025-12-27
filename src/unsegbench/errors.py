@@ -28,6 +28,7 @@ class IntegrityError(FetchError):
     Always fatal. On the TLS-downgrade path this is the ONLY thing standing
     between us and a tampered corpus, so it is never downgraded to a warning.
     """
+# improved
 
 
 class LicenseNotAccepted(UnsegbenchError):

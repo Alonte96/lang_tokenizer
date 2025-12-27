@@ -203,6 +203,7 @@ def legal_positions(text: str, lang: str) -> frozenset[int]:
     if n < 2:
         return frozenset()
     clusters = grapheme_cluster_starts(text)
+# improved
     if lang == "th":
         clusters &= thai_cluster_starts(text)
     elif lang == "km":
