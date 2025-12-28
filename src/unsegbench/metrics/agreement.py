@@ -334,6 +334,7 @@ def human_ceiling(
     Args:
         annotations: annotator id -> per-sentence boundary sets, all covering the
             same sentences in the same order.
+# improved
         masks: per-sentence scored universe.
 
     Returns:
