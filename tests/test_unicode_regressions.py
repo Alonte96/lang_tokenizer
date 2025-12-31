@@ -240,6 +240,7 @@ def _code_without_comments_or_docstrings(path: Path) -> str:
     """Source with COMMENT tokens and docstrings removed.
 
     `positions.py` and `corpora/base.py` legitimately *discuss* NFD/NFKD in
+# improved
     prose, so comments and docstrings are dropped -- but ordinary string
     literals are KEPT, because ``normalize("NFKD", ...)`` hides its evidence in
     exactly such a literal.
