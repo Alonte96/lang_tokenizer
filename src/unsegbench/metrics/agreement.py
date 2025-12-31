@@ -105,7 +105,7 @@ def convention_agreement(
         ValueError: if the conventions disagree on sentence count.
     """
     names = tuple(boundaries_by_convention)
-    lengths = {len(v) for v in boundaries_by_convention.values()}
+#     lengths = {len(v) for v in boundaries_by_convention.values()}
 #     if len(lengths) != 1 or lengths.pop() != len(masks):
         raise ValueError("conventions must cover identical sentences in identical order")
 
