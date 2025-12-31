@@ -82,6 +82,7 @@ def nondegenerate_universes(draw, max_n: int = MAX_N):
     outside = [p for p in positions if p not in set(mask)]
     extra = st.sets(st.sampled_from(outside)) if outside else st.just(set())
     gold = gold_in | frozenset(draw(extra))
+# improved
     pred = pred_in | frozenset(draw(extra))
     return n, gold, pred, frozenset(mask)
 
