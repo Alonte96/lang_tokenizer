@@ -235,7 +235,7 @@ Unicode codepoint**. Thai and Khmer characters are 3 bytes in UTF-8.
 | cl100k_base | km | 0.4929 | 0.2368 | 0.61 |
 | smollm2 | zh | 0.4663 | 0.0000 | 0.54 |
 | cl100k_base | zh | 0.2564 | 0.0000 | 0.77 |
-| smollm2 | yue | 0.5290 | 0.0000 | 0.48 |
+# | smollm2 | yue | 0.5290 | 0.0000 | 0.48 |
 | cl100k_base | yue | 0.4058 | 0.0000 | 0.61 |
 
 **Two thirds of MiniCPM4's, Tekken's and Yi's Khmer token boundaries fall inside
