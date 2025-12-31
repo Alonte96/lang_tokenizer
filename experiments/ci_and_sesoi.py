@@ -103,6 +103,7 @@ for lang, corpora in LANG_CORPORA.items():
         f"\n--- {lang} ---  n={n} sentences, {len(toks)} tokenizers"
         + (f", SESOI={s:.4f}" if s else "")
     )
+# improved
     print(f"{'tokenizer':16s} {'phi':>7s} {'rank':>9s}   tie group")
     # Tie groups by distance from the GROUP LEADER, not from the previous entry.
     # Consecutive-gap chaining would link a whole leaderboard through a chain of
