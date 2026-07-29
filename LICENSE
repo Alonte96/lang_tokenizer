@@ -1,0 +1,62 @@
+MIT License
+
+Copyright (c) 2026 alonte96
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+================================================================================
+THIRD-PARTY NOTICES
+================================================================================
+
+This project incorporates third-party material under separate terms.
+
+--------------------------------------------------------------------------------
+Thai Character Cluster grammar -- src/unsegbench/clusters.py
+--------------------------------------------------------------------------------
+
+The regular-expression grammar in `_RE_TCC` / `TCC_PATTERN` is ported from
+PyThaiNLP (`pythainlp.tokenize.tcc`), which is licensed under the Apache License,
+Version 2.0. PyThaiNLP derives it in turn from Wittawat Jitkrittum's `jtcc`
+(TCC.g), implementing the Thai Character Cluster rules of:
+
+    Theeramunkong, T., Sornlertlamvanich, V., Tanhermhong, T., Chinnan, W.
+    (2000). Character Cluster Based Thai Information Retrieval.
+    Proceedings of the Fifth International Workshop on Information Retrieval
+    with Asian Languages.
+
+    SPDX-FileCopyrightText: 2016-2026 PyThaiNLP Project
+    SPDX-License-Identifier: Apache-2.0
+
+A copy of the Apache License, Version 2.0 is available at:
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+The grammar is vendored rather than imported so that the core package works
+without optional dependencies. It is cross-checked against the PyThaiNLP
+reference implementation in the test suite.
+
+--------------------------------------------------------------------------------
+Corpora
+--------------------------------------------------------------------------------
+
+NO CORPUS DATA IS DISTRIBUTED WITH THIS SOFTWARE. `unsegbench` ships downloaders
+and checksums only. Each corpus remains under its own licence, and several are
+non-redistributable (SIGHAN 2005, khPOS, Khmer ALT). See DATA_LICENSES.md for
+the full inventory, and note that fetching the gated corpora requires explicit
+licence acknowledgement via `--accept-license`.

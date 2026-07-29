@@ -1,0 +1,99 @@
+[project]
+name = "unsegbench"
+version = "0.1.0"
+description = "Benchmarking LLM tokenizer alignment with gold word boundaries in unsegmented scripts (zh, yue, th, km)"
+readme = "README.md"
+authors = [{ name = "alonte96", email = "alonte96@users.noreply.github.com" }]
+license = { file = "LICENSE" }
+requires-python = ">=3.12"
+keywords = ["tokenization", "word-segmentation", "chinese", "cantonese", "thai", "khmer", "nlp", "benchmark"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+dependencies = [
+    # tokenizer loading -- NOTE: transformers does NOT pull torch for tokenizer-only use
+    "transformers>=4.48,<5",
+    "tokenizers>=0.21",
+    "tiktoken>=0.8",
+    "sentencepiece>=0.2",
+    "protobuf>=4.25",
+    "huggingface-hub>=0.27",
+    # data
+    "pyarrow>=18",
+    "conllu>=6.0",
+    "regex>=2024.11",
+    # fetch / cache
+    "httpx>=0.28",
+    "platformdirs>=4.3",
+    "filelock>=3.16",
+    "orjson>=3.10",
+    # cli / report
+    "typer>=0.15",
+    "rich>=13",
+    "numpy>=2.1",
+    "pandas>=2.2",
+    "matplotlib>=3.9",
+    "scipy>=1.14",
+]
+
+[project.optional-dependencies]
+zh = ["jieba>=0.42"]
+yue = ["pycantonese>=3.4"]
+th = ["pythainlp>=5.0"]
+km = ["khmer-nltk>=1.6"]
+crf = ["sklearn-crfsuite>=0.5", "scikit-learn>=1.5"]
+seg = ["segeval>=2.0.11"]
+conv = ["opencc-python-reimplemented>=0.1.7"]
+
+[project.urls]
+Homepage = "https://github.com/alonte96/unsegbench"
+Repository = "https://github.com/alonte96/unsegbench"
+Issues = "https://github.com/alonte96/unsegbench/issues"
+
+[project.scripts]
+unsegbench = "unsegbench.cli:app"
+
+[dependency-groups]
+dev = [
+    "pytest>=8.3",
+    "pytest-xdist>=3.6",
+    "pytest-cov>=6",
+    "hypothesis>=6.120",
+    "ruff>=0.9",
+    "mypy>=1.14",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/unsegbench"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = [
+    "network: requires network access (deselect with '-m \"not network\"')",
+    "slow: takes more than a few seconds",
+    "perl: requires /usr/bin/perl and the official SIGHAN scorer",
+]
+filterwarnings = ["ignore::DeprecationWarning:pkg_resources.*"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM", "RUF"]
+ignore = ["E501", "RUF001", "RUF002", "RUF003"]  # RUF00x: ambiguous unicode is the point here
+
+[tool.mypy]
+python_version = "3.12"
+warn_unused_ignores = true
+disallow_untyped_defs = true
+ignore_missing_imports = true
+files = ["src/unsegbench"]

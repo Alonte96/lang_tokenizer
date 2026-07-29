@@ -1,0 +1,96 @@
+# CI for unsegbench.
+#
+# Two jobs, deliberately split by cost:
+#   test     -- offline, every push and PR. No network, no corpora, no licences.
+#   nightly  -- the network + perl SIGHAN cross-check, on a schedule.
+#
+# NOTE every `uv run` carries --no-sync. A bare `uv run` re-resolves to the
+# DEFAULT dependency set, which drops the optional extras installed by
+# `uv sync --all-extras` (and the editable install with them).
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  schedule:
+    - cron: "0 4 * * *"
+
+jobs:
+  test:
+    name: test (${{ matrix.os }})
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest]
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+
+      - name: Set up Python 3.12
+        run: uv python install 3.12
+
+      - name: Sync dependencies
+        run: uv sync --all-extras
+
+      - name: Assert torch is not installed
+        # transformers is used for tokenizers only. If a dependency ever pulls
+        # torch, this is the thing that says so before a 2 GB wheel lands.
+        run: |
+          uv run --no-sync python - <<'PY'
+          import importlib.util, sys
+          if importlib.util.find_spec("torch") is not None:
+              sys.exit("torch is installed; unsegbench must stay tokenizer-only")
+          print("ok: torch not importable")
+          PY
+
+      - name: ruff check
+        run: uv run --no-sync ruff check src tests
+
+      - name: ruff format --check
+        run: uv run --no-sync ruff format --check src tests
+
+      - name: mypy
+        run: uv run --no-sync mypy
+
+      - name: pytest (offline subset)
+        run: uv run --no-sync pytest -n auto -m "not network and not slow" --durations=10
+
+  nightly:
+    name: nightly (network + perl cross-check)
+    if: github.event_name == 'schedule'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+
+      - name: Set up Python 3.12
+        run: uv python install 3.12
+
+      - name: Sync dependencies
+        run: uv sync --all-extras
+
+      - name: Check perl and diff -y
+        run: |
+          perl --version | head -2
+          echo a | diff -y - - || true
+
+      - name: Cache corpora and tokenizers
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/unsegbench
+          key: unsegbench-cache-${{ hashFiles('corpora.lock.json') }}
+
+      - name: pytest (network + slow + perl)
+        env:
+          UNSEGBENCH_CACHE: ~/.cache/unsegbench
+        run: uv run --no-sync pytest -n auto -m "network or slow" --durations=20

@@ -1,0 +1,19 @@
+CC BY-NC-SA 4.0 -- LICENCE NOTICE (khPOS, Khmer ALT)
+
+This is a NOTICE, not the data. unsegbench redistributes no corpus bytes.
+
+khPOS (github.com/ye-kyaw-thu/khPOS) and the Khmer Asian Language Treebank
+(www2.nict.go.jp/astrec-att/member/mutiyama/ALT/) are licensed under
+Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International.
+
+  https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+Three consequences that matter here:
+
+  * NonCommercial -- fine for research, NOT for commercial evaluation. If you
+    are assessing a tokenizer for a commercial product, use
+    `--corpora @permissive`; Khmer coverage is then absent.
+  * ShareAlike -- the clause propagates to derivatives.
+  * Attribution -- cite the original authors, not this package.
+
+By passing --accept-license khpos (or alt) you acknowledge these terms.
